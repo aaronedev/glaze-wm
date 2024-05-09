@@ -59,7 +59,6 @@ bar:
       border_radius: "5px"
       border_width: "3px"
       border_color: "#3e2a90"
-      padding: "0 0"
       margin: "-3px 0"
       focused_workspace_background: "#372359"
       focused_workspace_foreground: "#99d4dc"
@@ -153,8 +152,12 @@ window_rules:
   - command: "ignore"
     match_process_name: "/Flow.Launcher/"
   - command: "ignore"
-    match_title: "[Pp]icture.in.[Pp]icture"
-    match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
+    match_process_name: "/Windows Terminal/"
+    match_title: "/^(?:(?!Administrator: Windows Terminal).)*$/"
+
+  # - command: "ignore"
+  #   match_title: "[Pp]icture.in.[Pp]icture"
+  #   match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
 
   # - command: "ignore"
   #   match_process_name: "/WindowsTerminal|wt/"
@@ -162,8 +165,8 @@ window_rules:
 
   - command: "set floating"
     match_class_name: "#32770"
-  - command: "set floating"
-    match_process_name: "copyq"
+  # - command: "set floating"
+  #   match_process_name: "copyq"
 
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "steam"
