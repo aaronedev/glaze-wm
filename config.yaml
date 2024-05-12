@@ -114,6 +114,8 @@ bar:
       longitude: "6.953101"
       latitude: "50.935173"
     - type: "clock"
+      margin: "0 -8px 0 0"
+      padding: "5px 10px"
       border_radius: "5px"
       border_width: "2px"
       border_color: "#3f258d"
