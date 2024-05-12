@@ -23,7 +23,7 @@ bar:
   enabled: true
   opacity: 0.85
   height: "38px"
-  font_family: "CaskaydiaCove Nerd Font Propo"
+  font_family: "Arimo Nerd Font"
   font_size: "12px"
   font_weight: "normal"
   # offset_x: "2px"
@@ -78,13 +78,6 @@ bar:
       border_width: "2px"
       font_size: "24px"
       border_color: "#271951"
-
-  components_right:
-    - type: "window title"
-      padding: "5px 0"
-      border_radius: "8px"
-      border_width: "2px"
-      border_color: "#250e30"
     - type: "cpu"
       border_radius: "5px"
       border_width: "2px"
@@ -105,6 +98,21 @@ bar:
       margin: "0 0 0 8px"
       label: "<attr>\U000F07FD</attr>{percent_usage} %"
       refresh_interval_ms: 1000
+
+  components_right:
+    # - type: "window title"
+    #   padding: "5px 0"
+    #   border_radius: "8px"
+    #   border_width: "2px"
+    #   border_color: "#250e30"
+    - type: "weather"
+      label: "<attr>\U000F07B5</attr> {temp}°C"
+      padding: "5px 10px"
+      border_radius: "5px"
+      border_width: "2px"
+      border_color: "#271951"
+      longitude: "6.953101"
+      latitude: "50.935173"
     - type: "clock"
       border_radius: "5px"
       border_width: "2px"
@@ -152,12 +160,14 @@ window_rules:
   - command: "ignore"
     match_process_name: "/Flow.Launcher/"
   - command: "ignore"
+    match_process_name: "/copyq/"
+  - command: "ignore"
     match_process_name: "/Windows Terminal/"
     match_title: "/^(?:(?!Administrator: Windows Terminal).)*$/"
 
-  # - command: "ignore"
-  #   match_title: "[Pp]icture.in.[Pp]icture"
-  #   match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
+  - command: "ignore"
+    match_title: "[Pp]icture.in.[Pp]icture"
+    match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
 
   # - command: "ignore"
   #   match_process_name: "/WindowsTerminal|wt/"
@@ -165,8 +175,6 @@ window_rules:
 
   - command: "set floating"
     match_class_name: "#32770"
-  # - command: "set floating"
-  #   match_process_name: "copyq"
 
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "steam"
