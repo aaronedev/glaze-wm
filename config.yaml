@@ -14,10 +14,10 @@ gaps:
 focus_borders:
   active:
     enabled: true
-    color: "#491b86"
+    color: "#6d3bae"
   inactive:
     enabled: false
-    color: "#1c0d29"
+    color: "#7a5bc2"
 
 bar:
   enabled: true
@@ -26,8 +26,8 @@ bar:
   font_family: "Arimo Nerd Font"
   font_size: "12px"
   font_weight: "normal"
-  # offset_x: "2px"
-  # offset_y: "1px"
+  offset_x: "-2px"
+  offset_y: "0"
   border_radius: "6px"
   border_width: "2px"
   border_color: "#2c1943"
@@ -47,9 +47,10 @@ bar:
     - type: "network"
       label_no_internet: "\U000F0202"
       label_ethernet: "\U000F0201"
-      padding: "5px 10px"
+      padding: "5px 3px"
+      margin: "-1px 2px"
       border_radius: "5px"
-      border_width: "2px"
+      border_width: "3px"
       font_size: "22px"
       border_color: "#271951"
 
@@ -67,38 +68,39 @@ bar:
       font_size: "16px"
       label_horizontal: "⮂"
       label_vertical: "⮁"
-      margin: "-1px 4px"
       padding: "0 10px"
       border_radius: "5px"
-      border_width: "2px"
+      border_width: "3px"
       border_color: "#502961"
+      margin: "-3px 4px"
     - type: "binding mode"
-      padding: "0 5px"
+      padding: "0 6px"
       border_radius: "5px"
-      border_width: "2px"
+      border_width: "3px"
       font_size: "24px"
       border_color: "#271951"
     - type: "cpu"
       padding: "5px 6px"
+      margin: "-3px 2px"
       border_radius: "5px"
-      border_width: "2px"
+      border_width: "3px"
       border_color: "#221751"
       label: "<attr fs='24'>\U000F0EE0</attr> {percent_usage} %"
       refresh_interval_ms: 1000
     - type: "memory"
       padding: "5px 6px"
       border_radius: "5px"
-      border_width: "2px"
+      border_width: "3px"
       border_color: "#221751"
-      margin: "0 0 0 8px"
+      margin: "-3px 2px"
       label: "<attr fs='18'> </attr> {percent_usage} %"
       refresh_interval_ms: 1000
     - type: "gpu"
       padding: "5px 6px"
       border_radius: "5px"
-      border_width: "2px"
+      border_width: "3px"
       border_color: "#221751"
-      margin: "0 0 0 8px"
+      margin: "-3px 2px"
       label: "<attr fs='28'>\U000F07FD</attr>{percent_usage} %"
       refresh_interval_ms: 1000
 
