@@ -1,6 +1,6 @@
 general:
   focus_follows_cursor: false
-  cursor_follows_focus: false
+  cursor_follows_focus: true
   toggle_workspace_on_refocus: true
   show_floating_on_top: true
   floating_window_move_amount: "5%"
@@ -106,10 +106,10 @@ bar:
     - type: "network"
       label_no_internet: "\U000F0202"
       label_ethernet: "\U000F0201"
-      padding: "5px 2px"
-      margin: "-1px 2px"
-      border_radius: "3px"
-      border_width: "4px"
+      padding: "5px 10px"
+      margin: "0 2px"
+      border_radius: "5px"
+      border_width: "3px"
       font_size: "22px"
       border_color: "#3f258d"
     - type: "weather"
