@@ -21,15 +21,15 @@ focus_borders:
 
 bar:
   enabled: true
-  opacity: 1
+  opacity: 0.85
   height: "38px"
-  font_family: "RobotoMono Nerd Font Propo"
+  font_family: "RobotoMono Nerd Font Mono"
   font_size: "12px"
   font_weight: "800"
-  offset_x: "-5px"
+  offset_x: "-3px"
   offset_y: "3px"
   border_radius: "12px"
-  border_width: "5px"
+  border_width: "3px"
   border_color: "#2c1943"
   padding: "1px 7px 1px 1px"
   background: "#141118"
@@ -45,6 +45,7 @@ bar:
     border_width: "3px"
     font_size: "18px"
     border_color: "#311b5e"
+    refresh_interval_ms: 1000
   - type: "cpu"
     padding: "5px 4px"
     margin: "-2px 1px -2px 4px"
@@ -67,13 +68,13 @@ bar:
     border_radius: "7px"
     border_width: "3px"
     border_color: "#270a55"
-    label: "<attr fs='26'>\U000F08AE </attr>{percent_usage} %"
+    label: "<attr fs='26'>\U000F08AE</attr>{percent_usage} %"
     refresh_interval_ms: 1000
   - type: "window title"
     padding: "5px 5px"
     border_radius: "5px"
     border_width: "2px"
-    border_color: "#492f55"
+    border_color: "#468aa9"
     font_size: "11px"
 
   components_center:
@@ -95,7 +96,7 @@ bar:
     border_width: "3px"
     border_color: "#502961"
   - type: "workspaces"
-    font_size: "24px"
+    font_size: "26px"
     border_radius: "5px"
     border_width: "3px"
     border_color: "#3e2a90"
@@ -110,18 +111,29 @@ bar:
     border_radius: "5px"
     border_width: "2px"
     border_color: "#3f258d"
-  # - type: "music"
-  #   label_not_playing: ""
-  #   label_paused: "{song_title} - {artist_name}"
-  #   label_playing: "󰓃 {song_title} - {artist_name}"
-  #   max_title_length: 20
-  #   max_artist_length: 20
-  #   padding: "5px 5px"
-  #   border_radius: "5px"
-  #   border_width: "2px"
-  #   border_color: "#492f55"
 
   components_right:
+  - type: "music"
+    label_not_playing: "<attr fg='#75c3b6'>\U000F03E4</attr>"
+    label_paused: "{song_title} - {artist_name}"
+    label_playing: "<attr fg='#75c3b6'>\U000F0F1B {song_title} - {artist_name}</attr>"
+    max_title_length: 20
+    max_artist_length: 20
+    padding: "5px 5px"
+    margin: "0 3px 0 0"
+    border_radius: "5px"
+    border_width: "2px"
+    border_color: "#492f55"
+  - type: "volume"
+    label_low: "🔊{volume_level}%"
+    label_medium: "🔊{volume_level}%"
+    label_high: "🔊{volume_level}%"
+    label_mute: "🔊{volume_level}%"
+    padding: "5px 5px"
+    margin: "0 3px 0 0"
+    border_radius: "5px"
+    border_width: "2px"
+    border_color: "#492f55"
   - type: "weather"
     label: "<attr>\U000F07B5</attr> {temp}°C"
     margin: "0 2px 0 0"
