@@ -21,336 +21,345 @@ focus_borders:
 
 bar:
   enabled: true
-  opacity: 0.85
+  opacity: 1
   height: "38px"
-  font_family: "UbuntuMono Nerd Font Propo"
+  font_family: "RobotoMono Nerd Font Propo"
   font_size: "12px"
-  font_weight: "normal"
-  offset_x: "-2px"
-  offset_y: "0"
-  border_radius: "6px"
-  border_width: "3px"
+  font_weight: "800"
+  offset_x: "-5px"
+  offset_y: "3px"
+  border_radius: "12px"
+  border_width: "5px"
   border_color: "#2c1943"
   padding: "1px 7px 1px 1px"
   background: "#141118"
   foreground: "#aeb1fb"
 
   components_left:
-    - type: "network"
-      label_no_internet: "\U000F0202"
-      label_ethernet: "\U000F0201"
-      padding: "4px 2px"
-      margin: "0 0 0 -2px"
-      border_radius: "7px"
-      border_width: "3px"
-      font_size: "18px"
-      border_color: "#0e0037"
-    - type: "system tray"
-      label_expand_text: "<attr fs='16' fg='#9e7eff'></attr>"
-      label_collapse_text: "<attr fs='20' fg='#9e7eff'>\U000F0BAB</attr>"
-      padding: "4px 4px"
-      margin: "0 -2px"
-      border_radius: "7px"
-      border_width: "3px"
-      border_color: "#3f258d"
-    - type: "binding mode"
-      padding: "0 10px"
-      margin: "-1px 1px"
-      border_radius: "5px"
-      border_width: "3px"
-      font_size: "13px"
-      border_color: "#2d1096"
-    - type: "tiling direction"
-      foreground: "#e6cf4b"
-      font_size: "16px"
-      label_horizontal: "⮂"
-      label_vertical: "⮁"
-      padding: "0 10px"
-      margin: "-1px 1px"
-      border_radius: "5px"
-      border_width: "3px"
-      border_color: "#502961"
-    - type: "window title"
-      padding: "5px 5px"
-      border_radius: "5px"
-      border_width: "2px"
-      border_color: "#492f55"
-      font_size: "11px"
+  - type: "network"
+    label_no_internet: "<attr fg='#9f1212'>\U000F0202</attr>"
+    label_ethernet: "<attr fg='#50976e'>\U000F0201</attr>"
+    padding: "4px 3px"
+    margin: "0 0 0 -2px"
+    border_radius: "7px"
+    border_width: "3px"
+    font_size: "18px"
+    border_color: "#311b5e"
+  - type: "cpu"
+    padding: "5px 4px"
+    margin: "-2px 1px -2px 4px"
+    border_radius: "7px"
+    border_width: "3px"
+    border_color: "#270a55"
+    label: "<attr fs='24'>\U000F0EE0</attr> {percent_usage} %"
+    refresh_interval_ms: 1000
+  - type: "memory"
+    padding: "5px 4px"
+    margin: "-2px 1px"
+    border_radius: "7px"
+    border_width: "3px"
+    border_color: "#270a55"
+    label: "<attr fs='18'> </attr> {percent_usage} %"
+    refresh_interval_ms: 1000
+  - type: "gpu"
+    padding: "5px 4px"
+    margin: "-2px 1px"
+    border_radius: "7px"
+    border_width: "3px"
+    border_color: "#270a55"
+    label: "<attr fs='26'>\U000F08AE </attr>{percent_usage} %"
+    refresh_interval_ms: 1000
+  - type: "window title"
+    padding: "5px 5px"
+    border_radius: "5px"
+    border_width: "2px"
+    border_color: "#492f55"
+    font_size: "11px"
 
   components_center:
-    - type: "workspaces"
-      font_size: "24px"
-      border_radius: "5px"
-      border_width: "3px"
-      border_color: "#3e2a90"
-      margin: "-3px 2px"
-      padding: "0 0"
-      focused_workspace_background: "#372359"
-      focused_workspace_foreground: "#99d4dc"
+  - type: "binding mode"
+    padding: "0 10px"
+    margin: "-1px 1px"
+    border_radius: "5px"
+    border_width: "3px"
+    font_size: "13px"
+    border_color: "#2d1096"
+  - type: "tiling direction"
+    foreground: "#e6cf4b"
+    font_size: "16px"
+    label_horizontal: "⮂"
+    label_vertical: "⮁"
+    padding: "0 10px"
+    margin: "-1px 1px"
+    border_radius: "5px"
+    border_width: "3px"
+    border_color: "#502961"
+  - type: "workspaces"
+    font_size: "24px"
+    border_radius: "5px"
+    border_width: "3px"
+    border_color: "#3e2a90"
+    margin: "-5px 2px"
+    padding: "0 0"
+    focused_workspace_background: "#372359"
+    focused_workspace_foreground: "#99d4dc"
+  - type: "system tray"
+    label_expand_text: "<attr fs='16' fg='#9e7eff'></attr>"
+    label_collapse_text: "<attr fs='20' fg='#9e7eff'>\U000F0BAB</attr>"
+    margin: "2px 0 2px 2px"
+    border_radius: "5px"
+    border_width: "2px"
+    border_color: "#3f258d"
+  # - type: "music"
+  #   label_not_playing: ""
+  #   label_paused: "{song_title} - {artist_name}"
+  #   label_playing: "󰓃 {song_title} - {artist_name}"
+  #   max_title_length: 20
+  #   max_artist_length: 20
+  #   padding: "5px 5px"
+  #   border_radius: "5px"
+  #   border_width: "2px"
+  #   border_color: "#492f55"
 
   components_right:
-    - type: "cpu"
-      padding: "5px 4px"
-      margin: "-2px 1px -2px 4px"
-      border_radius: "7px"
-      border_width: "3px"
-      border_color: "#270a55"
-      label: "<attr fs='24'>\U000F0EE0</attr> {percent_usage} %"
-      refresh_interval_ms: 1000
-    - type: "memory"
-      padding: "5px 4px"
-      margin: "-2px 1px"
-      border_radius: "7px"
-      border_width: "3px"
-      border_color: "#270a55"
-      label: "<attr fs='18'> </attr> {percent_usage} %"
-      refresh_interval_ms: 1000
-    - type: "gpu"
-      padding: "5px 4px"
-      margin: "-2px 1px"
-      border_radius: "7px"
-      border_width: "3px"
-      border_color: "#270a55"
-      label: "<attr fs='26'>󰢮 </attr>{percent_usage} %"
-      refresh_interval_ms: 1000
-    - type: "weather"
-      label: "<attr>\U000F07B5</attr> {temp}°C"
-      margin: "0 2px 0 0"
-      padding: "5px 5px"
-      border_radius: "5px"
-      border_width: "3px"
-      border_color: "#3f258d"
-      longitude: "6.953101"
-      latitude: "50.935173"
-      label_sun: "☀️ {temperature_celsius}°C"
-      label_moon: "🌙 {temperature_celsius}°C"
-      label_cloud_moon: "🌙☁️ {temperature_celsius}°C"
-      label_cloud_sun: "⛅ {temperature_celsius}°C"
-      label_cloud_moon_rain: "🌙🌧️ {temperature_celsius}°C"
-      label_cloud_sun_rain: "🌦️ {temperature_celsius}°C"
-      label_cloud_rain: "🌧️ {temperature_celsius}°C"
-      label_snow_flake: "❄️ {temperature_celsius}°C"
-      label_thunderstorm: "⚡ {temperature_celsius}°C"
-      label_cloud: "☁️ {temperature_celsius}°C"
-    - type: "clock"
-      margin: "0 -8px 0 0"
-      padding: "5px 5px"
-      border_radius: "5px"
-      border_width: "3px"
-      border_color: "#3f258d"
-      time_formatting: "dddd, dd.MM.yyyy | HH:mm"
+  - type: "weather"
+    label: "<attr>\U000F07B5</attr> {temp}°C"
+    margin: "0 2px 0 0"
+    padding: "5px 5px"
+    border_radius: "5px"
+    border_width: "3px"
+    border_color: "#3f258d"
+    longitude: "6.953101"
+    latitude: "50.935173"
+    label_sun: "☀️ {temperature_celsius}°C"
+    label_moon: "🌙 {temperature_celsius}°C"
+    label_cloud_moon: "🌙☁️ {temperature_celsius}°C"
+    label_cloud_sun: "⛅ {temperature_celsius}°C"
+    label_cloud_moon_rain: "🌙🌧️ {temperature_celsius}°C"
+    label_cloud_sun_rain: "🌦️ {temperature_celsius}°C"
+    label_cloud_rain: "🌧️ {temperature_celsius}°C"
+    label_snow_flake: "❄️ {temperature_celsius}°C"
+    label_thunderstorm: "⚡ {temperature_celsius}°C"
+    label_cloud: "☁️ {temperature_celsius}°C"
+  - type: "clock"
+    margin: "0 -8px 0 0"
+    padding: "5px 5px"
+    border_radius: "5px"
+    border_width: "3px"
+    border_color: "#3f258d"
+    time_formatting: "dddd, dd.MM.yyyy | HH:mm"
 
 workspaces:
-  - name: "1"
-    display_name: "¹󰈹"
-  - name: "2"
-    display_name: "²󰨞"
-  - name: "3"
-    display_name: "³󱅚"
-  - name: "4"
-    display_name: "⁴󰻤"
-  - name: "5"
-    display_name: "⁵󰍥"
-  - name: "6"
-    display_name: "⁶\U000F04D3"
-  - name: "7"
-    display_name: "⁷󰆍"
-  - name: "8"
-    display_name: "⁸"
-  - name: "9"
-    display_name: "⁹󰓇"
+- name: "1"
+  display_name: "¹\U000F0239"
+- name: "2"
+  display_name: "²\U000F0A1E"
+- name: "3"
+  display_name: "³\U000F115A"
+- name: "4"
+  display_name: "⁴\U000F0EE4"
+- name: "5"
+  display_name: "⁵\U000F0365"
+- name: "6"
+  display_name: "⁶\U000F04D3"
+- name: "7"
+  display_name: "⁷\U000F018D"
+- name: "8"
+  display_name: "⁸"
+- name: "9"
+  display_name: "⁹\U000F04C7"
 
 window_rules:
-  - command: "move to workspace 2"
-    match_process_name: "/Visual Studio Code|Code/"
-  - command: "move to workspace 3"
-    match_process_name: "/Obsidian/"
-  - command: "move to workspace 4"
-    match_process_name: "/thunderbird/"
-  - command: "move to workspace 5"
-    match_process_name: "/Telegram|64gram|Signal|Discord/"
-  - command: "move to workspace 6"
-    match_process_name: "/Steam|steamwebhelper/"
-  - command: "move to workspace 8"
-    match_process_name: "qBittorrent"
-  - command: "move to workspace 9"
-    match_process_name: "/Spotify|MusicBee/"
+- command: "move to workspace 2"
+  match_process_name: "/Visual Studio Code|Code/"
+- command: "move to workspace 3"
+  match_process_name: "/Obsidian/"
+- command: "move to workspace 4"
+  match_process_name: "/thunderbird/"
+- command: "move to workspace 5"
+  match_process_name: "/Telegram|64gram|Signal|Discord/"
+- command: "move to workspace 6"
+  match_process_name: "/Steam|steamwebhelper/"
+- command: "move to workspace 8"
+  match_process_name: "qBittorrent"
+- command: "move to workspace 9"
+  match_process_name: "/Spotify|MusicBee/"
 
-  - command: "ignore"
-    match_process_name: "/Taskmgr|ScreenClippingHost/"
-  - command: "ignore"
-    match_process_name: "/Flow.Launcher/"
-  - command: "ignore"
-    match_process_name: "/copyq/"
-  - command: "ignore"
-    match_process_name: "/Windows Terminal/"
-    match_title: "/^(?:(?!Administrator: Windows Terminal).)*$/"
+- command: "ignore"
+  match_process_name: "/Taskmgr|ScreenClippingHost/"
+- command: "ignore"
+  match_process_name: "/Flow.Launcher/"
+- command: "ignore"
+  match_process_name: "/copyq/"
+- command: "ignore"
+  match_process_name: "/Windows Terminal/"
+  match_title: "/^(?:(?!Administrator: Windows Terminal).)*$/"
 
-  - command: "ignore"
-    match_title: "[Pp]icture.in.[Pp]icture"
-    match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
+- command: "ignore"
+  match_title: "[Pp]icture.in.[Pp]icture"
+  match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
 
-  # - command: "ignore"
-  #   match_process_name: "/WindowsTerminal|wt/"
-  #   match_title: "/Administrator/"
+# - command: "ignore"
+#   match_process_name: "/WindowsTerminal|wt/"
+#   match_title: "/Administrator/"
 
-  - command: "set floating"
-    match_process_name: "/Thunderbird/"
-    match_title: "/(Write|Reply)/"
+- command: "set floating"
+  match_process_name: "/Thunderbird/"
+  match_title: "/(Write|Reply)/"
 
-  - command: "set floating"
-    match_class_name: "#32770"
+- command: "set floating"
+  match_class_name: "#32770"
 
-  - command: "resize borders 0px -7px -7px -7px"
-    match_process_name: "steam"
+- command: "resize borders 0px -7px -7px -7px"
+  match_process_name: "steam"
 
 binding_modes:
-  - name: "resize"
-    keybindings:
-      # Resize focused window by a percentage or pixel amount.
-      - command: "resize width -2%"
-        bindings: ["H", "Left"]
-      - command: "resize width +2%"
-        bindings: ["L", "Right"]
-      - command: "resize height +2%"
-        bindings: ["K", "Up"]
-      - command: "resize height -2%"
-        bindings: ["J", "Down"]
-      - command: "binding mode none"
-        # Press enter/escape to return to default keybindings.
-        bindings: ["Escape", "Enter"]
-
-keybindings:
-  # Shift focus in a given direction.
-  - command: "focus left"
-    bindings: ["Alt+H", "Alt+Left"]
-  - command: "focus right"
-    bindings: ["Alt+L", "Alt+Right"]
-  - command: "focus up"
-    bindings: ["Alt+K", "Alt+Up"]
-  - command: "focus down"
-    bindings: ["Alt+J", "Alt+Down"]
-  - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
-    bindings: ["Alt+OemPipe"]
-
-  # Move focused window in a given direction.
-  - command: "move left"
-    bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
-  - command: "move right"
-    bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
-  - command: "move up"
-    bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
-  - command: "move down"
-    bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
-
+- name: "resize"
+  keybindings:
   # Resize focused window by a percentage or pixel amount.
   - command: "resize width -2%"
-    binding: "Alt+U"
+    bindings: ["H", "Left"]
   - command: "resize width +2%"
-    binding: "Alt+P"
+    bindings: ["L", "Right"]
   - command: "resize height +2%"
-    binding: "Alt+O"
+    bindings: ["K", "Up"]
   - command: "resize height -2%"
-    binding: "Alt+I"
+    bindings: ["J", "Down"]
+  - command: "binding mode none"
+    # Press enter/escape to return to default keybindings.
+    bindings: ["Escape", "Enter"]
 
-  # As an alternative to the resize keybindings above, resize mode enables resizing via
-  # HJKL or arrow keys. The binding mode is defined above with the name "resize".
-  - command: "binding mode resize"
-    binding: "Alt+R"
+keybindings:
+# Shift focus in a given direction.
+- command: "focus left"
+  bindings: ["Alt+H", "Alt+Left"]
+- command: "focus right"
+  bindings: ["Alt+L", "Alt+Right"]
+- command: "focus up"
+  bindings: ["Alt+K", "Alt+Up"]
+- command: "focus down"
+  bindings: ["Alt+J", "Alt+Down"]
+- command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
+  bindings: ["Alt+OemPipe"]
 
-  # Change tiling direction. This determines where new tiling windows will be inserted.
-  - command: "tiling direction toggle"
-    binding: "Alt+V"
+# Move focused window in a given direction.
+- command: "move left"
+  bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
+- command: "move right"
+  bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
+- command: "move up"
+  bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
+- command: "move down"
+  bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
 
-  # Change focus between floating / tiling windows.
-  - command: "focus mode toggle"
-    binding: "Alt+Space"
+# Resize focused window by a percentage or pixel amount.
+- command: "resize width -2%"
+  binding: "Alt+U"
+- command: "resize width +2%"
+  binding: "Alt+P"
+- command: "resize height +2%"
+  binding: "Alt+O"
+- command: "resize height -2%"
+  binding: "Alt+I"
 
-  # Change the focused window to be floating / tiling.
-  - command: "toggle floating"
-    binding: "Alt+Shift+Space"
+# As an alternative to the resize keybindings above, resize mode enables resizing via
+# HJKL or arrow keys. The binding mode is defined above with the name "resize".
+- command: "binding mode resize"
+  binding: "Alt+R"
 
-  # Change the focused window to be maximized / unmaximized.
-  - command: "toggle maximized"
-    binding: "Alt+X"
+# Change tiling direction. This determines where new tiling windows will be inserted.
+- command: "tiling direction toggle"
+  binding: "Alt+V"
 
-  # Minimize focused window.
-  - command: "set minimized"
-    binding: "Alt+M"
+# Change focus between floating / tiling windows.
+- command: "focus mode toggle"
+  binding: "Alt+Space"
 
-  # Close focused window.
-  - command: "close"
-    binding: "Alt+Q"
+# Change the focused window to be floating / tiling.
+- command: "toggle floating"
+  binding: "Alt+Shift+Space"
 
-  # Kill GlazeWM process safely.
-  - command: "exit wm"
-    binding: "Alt+Shift+E"
+# Change the focused window to be maximized / unmaximized.
+- command: "toggle maximized"
+  binding: "Alt+X"
 
-  # Re-evaluate configuration file.
-  - command: "reload config"
-    binding: "Alt+Shift+R"
+# Minimize focused window.
+- command: "set minimized"
+  binding: "Alt+M"
 
-  # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
-  # to start Windows Terminal and Git Bash respectively.
-  - command: "exec wt"
-    binding: "Alt+Enter"
+# Close focused window.
+- command: "close"
+  binding: "Alt+Q"
 
-  # Focus the workspace that last had focus.
-  - command: "focus workspace recent"
-    binding: "Alt+B"
+# Kill GlazeWM process safely.
+- command: "exit wm"
+  binding: "Alt+Shift+E"
 
-  # Focus the next/previous workspace defined in `workspaces` config.
-  # - command: "focus workspace next"
-  #   binding: "Alt+T"
-  # - command: "focus workspace prev"
-  #   binding: "Alt+Shift+T"
+# Re-evaluate configuration file.
+- command: "reload config"
+  binding: "Alt+Shift+R"
 
-  # Change focus to a workspace defined in `workspaces` config.
-  - command: "focus workspace 1"
-    binding: "Alt+1"
-  - command: "focus workspace 2"
-    binding: "Alt+2"
-  - command: "focus workspace 3"
-    binding: "Alt+3"
-  - command: "focus workspace 4"
-    binding: "Alt+4"
-  - command: "focus workspace 5"
-    binding: "Alt+5"
-  - command: "focus workspace 6"
-    binding: "Alt+6"
-  - command: "focus workspace 7"
-    binding: "Alt+7"
-  - command: "focus workspace 8"
-    binding: "Alt+8"
-  - command: "focus workspace 9"
-    binding: "Alt+9"
+# Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
+# to start Windows Terminal and Git Bash respectively.
+- command: "exec wt"
+  binding: "Alt+Enter"
 
-  # # Move focused workspace to a monitor in a given direction.
-  # - command: "move workspace left"
-  #   binding: "Alt+A"
-  # - command: "move workspace right"
-  #   binding: "Alt+F"
-  # - command: "move workspace up"
-  #   binding: "Alt+D"
-  # - command: "move workspace down"
-  #   binding: "Alt+S"
+# Focus the workspace that last had focus.
+- command: "focus workspace recent"
+  binding: "Alt+B"
 
-  # Move focused window to a workspace defined in `workspaces` config.
-  - commands: ["move to workspace 1", "focus workspace 1"]
-    binding: "Alt+Shift+1"
-  - commands: ["move to workspace 2", "focus workspace 2"]
-    binding: "Alt+Shift+2"
-  - commands: ["move to workspace 3", "focus workspace 3"]
-    binding: "Alt+Shift+3"
-  - commands: ["move to workspace 4", "focus workspace 4"]
-    binding: "Alt+Shift+4"
-  - commands: ["move to workspace 5", "focus workspace 5"]
-    binding: "Alt+Shift+5"
-  - commands: ["move to workspace 6", "focus workspace 6"]
-    binding: "Alt+Shift+6"
-  - commands: ["move to workspace 7", "focus workspace 7"]
-    binding: "Alt+Shift+7"
-  - commands: ["move to workspace 8", "focus workspace 8"]
-    binding: "Alt+Shift+8"
-  - commands: ["move to workspace 9", "focus workspace 9"]
-    bindings: ["Alt+Shift+9"]
+# Focus the next/previous workspace defined in `workspaces` config.
+# - command: "focus workspace next"
+#   binding: "Alt+T"
+# - command: "focus workspace prev"
+#   binding: "Alt+Shift+T"
+
+# Change focus to a workspace defined in `workspaces` config.
+- command: "focus workspace 1"
+  binding: "Alt+1"
+- command: "focus workspace 2"
+  binding: "Alt+2"
+- command: "focus workspace 3"
+  binding: "Alt+3"
+- command: "focus workspace 4"
+  binding: "Alt+4"
+- command: "focus workspace 5"
+  binding: "Alt+5"
+- command: "focus workspace 6"
+  binding: "Alt+6"
+- command: "focus workspace 7"
+  binding: "Alt+7"
+- command: "focus workspace 8"
+  binding: "Alt+8"
+- command: "focus workspace 9"
+  binding: "Alt+9"
+
+# # Move focused workspace to a monitor in a given direction.
+# - command: "move workspace left"
+#   binding: "Alt+A"
+# - command: "move workspace right"
+#   binding: "Alt+F"
+# - command: "move workspace up"
+#   binding: "Alt+D"
+# - command: "move workspace down"
+#   binding: "Alt+S"
+
+# Move focused window to a workspace defined in `workspaces` config.
+- commands: ["move to workspace 1", "focus workspace 1"]
+  binding: "Alt+Shift+1"
+- commands: ["move to workspace 2", "focus workspace 2"]
+  binding: "Alt+Shift+2"
+- commands: ["move to workspace 3", "focus workspace 3"]
+  binding: "Alt+Shift+3"
+- commands: ["move to workspace 4", "focus workspace 4"]
+  binding: "Alt+Shift+4"
+- commands: ["move to workspace 5", "focus workspace 5"]
+  binding: "Alt+Shift+5"
+- commands: ["move to workspace 6", "focus workspace 6"]
+  binding: "Alt+Shift+6"
+- commands: ["move to workspace 7", "focus workspace 7"]
+  binding: "Alt+Shift+7"
+- commands: ["move to workspace 8", "focus workspace 8"]
+  binding: "Alt+Shift+8"
+- commands: ["move to workspace 9", "focus workspace 9"]
+  bindings: ["Alt+Shift+9"]
