@@ -96,6 +96,7 @@ bar:
 
   components_right:
   - type: "weather"
+    font_size: "12px"
     label: "<attr>\U000F07B5</attr> {temp}°C"
     margin: "0 2px 0 0"
     padding: "2px 5px"
@@ -115,11 +116,12 @@ bar:
     label_thunderstorm: "⚡ {temperature_celsius}°C"
     label_cloud: "☁️ {temperature_celsius}°C"
   - type: "clock"
+    font_size: "12px"
     # margin: "0 -8px 0 0"
     padding: "2px"
     # border_radius: "8px"
-    # border_width: "2px"
-    border_color: "#3f258d"
+    border_width: "0 2px 0 0"
+    border_color: "#070112"
     time_formatting: "dd.MM.yyyy HH:mm"
   - type: "cpu"
     # margin: "-10px 6px -10px 0"
@@ -129,6 +131,7 @@ bar:
     # border_color: "#7e2727"
     label: "<attr fs='24'></attr>|{percent_usage}%"
     font_size: "12px"
+    foreground: "#a5b5f5"
     refresh_interval_ms: 1000
   - type: "memory"
     # margin: "-10px 6px -10px 0"
@@ -137,6 +140,7 @@ bar:
     border_color: "#fffbca"
     label: "<attr fs='24'></attr>|{percent_usage}%"
     font_size: "12px"
+    foreground: "#f5daa5"
     refresh_interval_ms: 1000
   - type: "gpu"
     # border_radius: "8px"
@@ -146,12 +150,13 @@ bar:
     border_color: "#38277e"
     label: "<attr fs='24'></attr>|{percent_usage}%"
     font_size: "12px"
+    foreground: "#f5a5a5"
     refresh_interval_ms: 1000
   - type: "network"
     label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0202</attr>"
     label_ethernet: "<attr fs='22' fg='#50976e'>\U000F0201</attr>"
-    padding: "6px 0"
-    margin: "0 4px"
+    padding: "4px 0"
+    margin: "2px 4px"
 
 workspaces:
 - name: "1"
