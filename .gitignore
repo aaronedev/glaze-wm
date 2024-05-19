@@ -1,3 +1,2 @@
-/errors.log
-./vscode
-/pytest_cache
+errors.log
+.pytest_cache
