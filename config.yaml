@@ -1,5 +1,5 @@
 general:
-  focus_follows_cursor: false
+  focus_follows_cursor: true
   cursor_follows_focus: true
   toggle_workspace_on_refocus: true
   show_floating_on_top: true
@@ -210,6 +210,10 @@ window_rules:
 - command: "set width 25%"
   match_process_name: "thorium"
   match_title: "/ChatGPT/"
+
+- command: "set width 25%"
+  match_process_name: "superProductivity"
+  match_title: "/Super Productivity/"
 
 binding_modes:
 - name: "resize"
