@@ -38,10 +38,11 @@ bar:
   components_left:
   - type: "system tray"
     label_expand_text: "<attr fs='26' fg='#4d2ab7'></attr>"
-    label_collapse_text: "<attr fs='22' fg='#301c6a'>\U000F0BAB</attr>"
-    padding: "4px 10px 2px 0"
-    margin: "2px"
-    # border_radius: "20px"
+    label_collapse_text: "<attr fs='26' fg='#301c6a'>\U000F0BAB</attr>"
+    margin: "5px"
+    # padding: "4px 10px 2px 0"
+  # margin: "2px"
+  # border_radius: "20px"
   # border_width: "0px 4px 0px 0"
   # border_color: "#391368"
 
