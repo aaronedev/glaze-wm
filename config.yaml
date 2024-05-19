@@ -21,7 +21,7 @@ focus_borders:
 
 bar:
   enabled: true
-  opacity: 0.8
+  opacity: 0.95
   height: "32px"
   font_family: "RobotoMono Nerd Font Mono"
   font_size: "10px"
@@ -39,11 +39,11 @@ bar:
   - type: "system tray"
     label_expand_text: "<attr fs='26' fg='#4d2ab7'></attr>"
     label_collapse_text: "<attr fs='22' fg='#301c6a'>\U000F0BAB</attr>"
-    padding: "5px 0"
-    # margin: "-6px 0 0 0"
-    # border_radius: "8px"
-    # border_width: "0px 2px 0px 0"
-    border_color: "#100320"
+    padding: "4px 10px 2px 0"
+    margin: "2px"
+    # border_radius: "20px"
+  # border_width: "0px 4px 0px 0"
+  # border_color: "#391368"
 
   components_center:
   - type: "workspaces"
