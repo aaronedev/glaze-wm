@@ -147,13 +147,15 @@ workspaces:
 - name: "5"
   display_name: "⁵◌"
 - name: "6"
-  display_name: "⁶◌"
+  display_name: "⁶\U000F08F1◌"
 - name: "7"
-  display_name: "⁷◌"
+  display_name: "⁷\U000F133D◌"
 - name: "8"
   display_name: "⁸◌"
 - name: "9"
   display_name: "⁹◌"
+- name: "10"
+  display_name: "⁰◌"
 
 window_rules:
 - command: "move to workspace 2"
@@ -165,11 +167,13 @@ window_rules:
 - command: "move to workspace 5"
   match_process_name: "/Telegram|64gram|Signal|Discord/"
 - command: "move to workspace 6"
-  match_process_name: "/Spotify|MusicBee/"
+  match_process_name: "/Ableton/"
 - command: "move to workspace 8"
   match_process_name: "qBittorrent"
 - command: "move to workspace 9"
   match_process_name: "/Steam|steamwebhelper/"
+- command: "move to workspace 10"
+  match_process_name: "/Spotify|MusicBee/"
 
 - command: "ignore"
   match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
@@ -287,6 +291,8 @@ keybindings:
   binding: "Alt+8"
 - command: "focus workspace 9"
   binding: "Alt+9"
+- command: "focus workspace 10"
+  binding: "Alt+0"
 
 - commands: ["move to workspace 1", "focus workspace 1"]
   binding: "Alt+Shift+1"
@@ -306,3 +312,5 @@ keybindings:
   binding: "Alt+Shift+8"
 - commands: ["move to workspace 9", "focus workspace 9"]
   bindings: ["Alt+Shift+9"]
+- commands: ["move to workspace 10", "focus workspace 10"]
+  bindings: ["Alt+Shift+0"]
