@@ -219,6 +219,12 @@ keybindings:
 - command: "exec wt"
   binding: "Alt+Enter"
 
+- command: "exec thorium"
+  binding: "Alt+T"
+
+- command: "exec 'C:\\Users\\eco\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'"
+  binding: "Alt+C"
+
 - command: "focus workspace recent"
   binding: "Alt+B"
 
