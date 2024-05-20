@@ -1,5 +1,5 @@
 general:
-  focus_follows_cursor: true
+  focus_follows_cursor: false
   cursor_follows_focus: true
   toggle_workspace_on_refocus: true
   show_floating_on_top: true
@@ -40,20 +40,13 @@ bar:
     label_expand_text: "<attr fs='26' fg='#4d2ab7'></attr>"
     label_collapse_text: "<attr fs='26' fg='#301c6a'>\U000F0BAB</attr>"
     margin: "5px"
-    # padding: "4px 10px 2px 0"
-  # margin: "2px"
-  # border_radius: "20px"
-  # border_width: "0px 4px 0px 0"
-  # border_color: "#391368"
 
   components_center:
   - type: "workspaces"
     font_size: "24px"
-    # border_radius: "20px"
     border_width: "3px 0px 3px 3px"
     border_color: "#221949"
     margin: "-10px 2px -10px 0"
-    # margin: "-4px 2px"
     focused_workspace_background: "#240a50"
     focused_workspace_foreground: "#feeeff"
   - type: "binding mode"
@@ -80,8 +73,6 @@ bar:
     label_mute: "<attr fg='#8a8aff'>\U000F075F {volume_level}%</attr>"
     padding: "6px 0"
     margin: "0 4px"
-    # border_radius: "8px"
-    # border_width: "0 0 0 2px"
     border_color: "#451481"
   - type: "music"
     label_not_playing: "<attr fs='20' fg='#75c3b6'></attr> {artist_name}"
@@ -91,8 +82,6 @@ bar:
     max_title_length: 20
     padding: "6px 2px"
     margin: "0 4px"
-    # border_radius: "8px"
-    # border_width: "2px"
     border_color: "#18072d"
 
   components_right:
@@ -101,8 +90,6 @@ bar:
     label: "<attr>\U000F07B5</attr> {temp}°C"
     margin: "0 2px 0 0"
     padding: "2px 5px"
-    # border_radius: "8px"
-    # border_width: "2px"
     border_color: "#3f258d"
     longitude: "6.953101"
     latitude: "50.935173"
@@ -118,24 +105,17 @@ bar:
     label_cloud: "☁️ {temperature_celsius}°C"
   - type: "clock"
     font_size: "12px"
-    # margin: "0 -8px 0 0"
     padding: "2px"
-    # border_radius: "8px"
     border_width: "0 2px 0 0"
     border_color: "#070112"
     time_formatting: "dd.MM.yyyy HH:mm"
   - type: "cpu"
-    # margin: "-10px 6px -10px 0"
     padding: "2px 0 0 5px"
-    # border_radius: "10px"
-    # border_width: "0px 0px 0px 2px"
-    # border_color: "#7e2727"
     label: "<attr fs='24'></attr>|{percent_usage}%"
     font_size: "12px"
     foreground: "#a5b5f5"
     refresh_interval_ms: 1000
   - type: "memory"
-    # margin: "-10px 6px -10px 0"
     padding: "2px 8px"
     border_width: "0px 0px 0px 0"
     border_color: "#fffbca"
@@ -144,8 +124,6 @@ bar:
     foreground: "#f5daa5"
     refresh_interval_ms: 1000
   - type: "gpu"
-    # border_radius: "8px"
-    # margin: "0 -2px 0 0"
     padding: "2px 0"
     border_width: "0px 0 0px 0"
     border_color: "#38277e"
@@ -155,7 +133,7 @@ bar:
     refresh_interval_ms: 1000
   - type: "network"
     label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0202</attr>"
-    label_ethernet: "<attr fs='22' fg='#50976e'>\U000F0201</attr>"
+    label_ethernet: "<attr fs='22' fg='#50976e'>\U000F0201</attr> {percent_usage} KB/s"
     padding: "4px 0"
     margin: "2px 4px"
 
@@ -219,7 +197,6 @@ window_rules:
 binding_modes:
 - name: "resize"
   keybindings:
-  # Resize focused window by a percentage or pixel amount.
   - command: "resize width -2%"
     bindings: ["H", "Left"]
   - command: "resize width +2%"
@@ -229,11 +206,15 @@ binding_modes:
   - command: "resize height -2%"
     bindings: ["J", "Down"]
   - command: "binding mode none"
-    # Press enter/escape to return to default keybindings.
     bindings: ["Escape", "Enter"]
 
 keybindings:
-# Shift focus in a given direction.
+- command: "exec wt"
+  binding: "Alt+Enter"
+
+- command: "focus workspace recent"
+  binding: "Alt+B"
+
 - command: "focus left"
   bindings: ["Alt+H", "Alt+Left"]
 - command: "focus right"
@@ -245,7 +226,6 @@ keybindings:
 - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
   bindings: ["Alt+OemPipe"]
 
-# Move focused window in a given direction.
 - command: "move left"
   bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
 - command: "move right"
@@ -255,7 +235,6 @@ keybindings:
 - command: "move down"
   bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
 
-# Resize focused window by a percentage or pixel amount.
 - command: "resize width -2%"
   binding: "Alt+U"
 - command: "resize width +2%"
@@ -265,51 +244,32 @@ keybindings:
 - command: "resize height -2%"
   binding: "Alt+I"
 
-# As an alternative to the resize keybindings above, resize mode enables resizing via
-# HJKL or arrow keys. The binding mode is defined above with the name "resize".
 - command: "binding mode resize"
   binding: "Alt+R"
 
-# Change tiling direction. This determines where new tiling windows will be inserted.
 - command: "tiling direction toggle"
   binding: "Alt+V"
 
-# Change focus between floating / tiling windows.
 - command: "focus mode toggle"
   binding: "Alt+Space"
 
-# Change the focused window to be floating / tiling.
 - command: "toggle floating"
   binding: "Alt+Shift+Space"
 
-# Change the focused window to be maximized / unmaximized.
 - command: "toggle maximized"
   binding: "Alt+X"
 
-# Minimize focused window.
 - command: "set minimized"
   binding: "Alt+M"
 
-# Close focused window.
 - command: "close"
   binding: "Alt+Q"
 
-# Kill GlazeWM process safely.
 - command: "exit wm"
   binding: "Alt+Shift+E"
 
-# Re-evaluate configuration file.
 - command: "reload config"
   binding: "Alt+Shift+R"
-
-# Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
-# to start Windows Terminal and Git Bash respectively.
-- command: "exec wt"
-  binding: "Alt+Enter"
-
-# Focus the workspace that last had focus.
-- command: "focus workspace recent"
-  binding: "Alt+B"
 
 # Focus the next/previous workspace defined in `workspaces` config.
 # - command: "focus workspace next"
@@ -317,7 +277,6 @@ keybindings:
 # - command: "focus workspace prev"
 #   binding: "Alt+Shift+T"
 
-# Change focus to a workspace defined in `workspaces` config.
 - command: "focus workspace 1"
   binding: "Alt+1"
 - command: "focus workspace 2"
@@ -347,7 +306,6 @@ keybindings:
 # - command: "move workspace down"
 #   binding: "Alt+S"
 
-# Move focused window to a workspace defined in `workspaces` config.
 - commands: ["move to workspace 1", "focus workspace 1"]
   binding: "Alt+Shift+1"
 - commands: ["move to workspace 2", "focus workspace 2"]
