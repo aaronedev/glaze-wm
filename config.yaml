@@ -140,13 +140,13 @@ workspaces:
   display_name: "¹◌"
   keep_alive: true
 - name: "2"
-  display_name: "²◌"
+  display_name: "²◌"
 - name: "3"
-  display_name: "³◌"
+  display_name: "³\U000F0A1E◌"
 - name: "4"
-  display_name: "⁴◌"
+  display_name: "⁴◌"
 - name: "5"
-  display_name: "⁵◌"
+  display_name: "⁵◌"
 - name: "6"
   display_name: "⁶\U000F08F1◌"
 - name: "7"
@@ -157,16 +157,18 @@ workspaces:
   display_name: "⁹◌"
 - name: "10"
   display_name: "⁰◌"
+- name: "11"
+  display_name: "ᶜ◌"
+  keep_alive: true
+- name: "12"
+  display_name: "ᵗ◌"
+  keep_alive: true
 
 window_rules:
-- command: "move to workspace 2"
-  match_process_name: "/Visual Studio Code|Code/"
 - command: "move to workspace 3"
-  match_process_name: "/Obsidian/"
+  match_process_name: "/Visual Studio Code|Code/"
 - command: "move to workspace 4"
-  match_process_name: "/thunderbird/"
-- command: "move to workspace 5"
-  match_process_name: "/Telegram|64gram|Signal|Discord/"
+  match_process_name: "/Obsidian/"
 - command: "move to workspace 6"
   match_process_name: "/Ableton/"
 - command: "move to workspace 8"
@@ -175,6 +177,10 @@ window_rules:
   match_process_name: "/Steam|steamwebhelper/"
 - command: "move to workspace 10"
   match_process_name: "/Spotify|MusicBee/"
+- command: "move to workspace 11"
+  match_process_name: "/Telegram|64gram|Signal|Discord/"
+- command: "move to workspace 12"
+  match_process_name: "/thunderbird/"
 
 - command: "ignore"
   match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
@@ -219,11 +225,11 @@ keybindings:
 - command: "exec wt"
   binding: "Alt+Enter"
 
-- command: "exec thunderbird"
-  binding: "Alt+T"
+# - command: "exec thunderbird"
+#   binding: "Alt+T"
 
-- command: "exec 'C:\\Users\\eco\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'"
-  binding: "Alt+C"
+# - command: "exec 'C:\\Users\\eco\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'"
+#   binding: "Alt+C"
 
 - command: "exec 'C:\\Program Files\\Git\\git-bash.exe'"
   binding: "Alt+B"
@@ -310,6 +316,10 @@ keybindings:
   binding: "Alt+9"
 - command: "focus workspace 10"
   binding: "Alt+0"
+- command: "focus workspace 11"
+  binding: "Alt+C"
+- command: "focus workspace 12"
+  binding: "Alt+T"
 
 - commands: ["move to workspace 1", "focus workspace 1"]
   binding: "Alt+Shift+1"
@@ -331,3 +341,7 @@ keybindings:
   bindings: ["Alt+Shift+9"]
 - commands: ["move to workspace 10", "focus workspace 10"]
   bindings: ["Alt+Shift+0"]
+- commands: ["move to workspace 11", "focus workspace 11"]
+  bindings: ["Alt+Shift+C"]
+- commands: ["move to workspace 12", "focus workspace 12"]
+  bindings: ["Alt+Shift+T"]
