@@ -26,8 +26,6 @@ bar:
   font_family: "RobotoMono Nerd Font Mono"
   font_size: "10px"
   font_weight: "800"
-  # offset_x: "10px"
-  # offset_y: "-2px"
   border_radius: "12px"
   border_width: "1px"
   border_color: "#140c1d"
@@ -133,7 +131,7 @@ bar:
     refresh_interval_ms: 1000
   - type: "network"
     label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0202</attr>"
-    label_ethernet: "<attr fs='22' fg='#50976e'>\U000F0201</attr> {percent_usage} KB/s"
+    label_ethernet: "<attr fs='22' fg='#50976e'>\U000F0201</attr>"
     padding: "4px 0"
     margin: "2px 4px"
 
