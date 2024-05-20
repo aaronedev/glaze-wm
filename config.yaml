@@ -7,6 +7,7 @@ general:
   center_new_floating_windows: true
   window_animations: "false"
 
+# test
 gaps:
   inner_gap: "2px"
   outer_gap: "2px"
