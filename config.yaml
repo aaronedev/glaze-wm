@@ -138,6 +138,7 @@ bar:
 workspaces:
 - name: "1"
   display_name: "¹◌"
+  keep_alive: true
 - name: "2"
   display_name: "²◌"
 - name: "3"
@@ -192,9 +193,13 @@ window_rules:
   match_process_name: "thorium"
   match_title: "/ChatGPT/"
 
-- command: "set width 25%"
+- command: "set width 605px"
   match_process_name: "superProductivity"
   match_title: "/Super Productivity/"
+
+- command: "set width 20%"
+  match_process_name: "SamsungFlow"
+  match_title: "/Samsung Flow|SamsungFlowDesktop/"
 
 binding_modes:
 - name: "resize"
