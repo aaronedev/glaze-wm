@@ -219,7 +219,7 @@ keybindings:
 - command: "exec wt"
   binding: "Alt+Enter"
 
-- command: "exec thorium"
+- command: "exec thunderbird"
   binding: "Alt+T"
 
 - command: "exec 'C:\\Users\\eco\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'"
@@ -241,24 +241,6 @@ keybindings:
   bindings: ["Alt+J", "Alt+Down"]
 - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
   bindings: ["Alt+OemPipe"]
-
-- command: "move left"
-  bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
-- command: "move right"
-  bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
-- command: "move up"
-  bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
-- command: "move down"
-  bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
-
-- command: "resize width -2%"
-  binding: "Alt+U"
-- command: "resize width +2%"
-  binding: "Alt+P"
-- command: "resize height +2%"
-  binding: "Alt+O"
-- command: "resize height -2%"
-  binding: "Alt+I"
 
 - command: "binding mode resize"
   binding: "Alt+R"
@@ -286,6 +268,24 @@ keybindings:
 
 - command: "reload config"
   binding: "Alt+Shift+R"
+
+- command: "resize width -2%"
+  binding: "Alt+U"
+- command: "resize width +2%"
+  binding: "Alt+P"
+- command: "resize height +2%"
+  binding: "Alt+O"
+- command: "resize height -2%"
+  binding: "Alt+I"
+
+- command: "move left"
+  bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
+- command: "move right"
+  bindings: ["Alt+Shift+L", "Alt+Shift+Right"]
+- command: "move up"
+  bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
+- command: "move down"
+  bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
 
 - command: "focus workspace 1"
   binding: "Alt+1"
