@@ -156,7 +156,7 @@ workspaces:
 - name: "9"
   display_name: "⁹◌"
 - name: "10"
-  display_name: "⁰◌"
+  display_name: "ᵃ\U000F08F1◌"
 - name: "11"
   display_name: "ᶜ◌"
   keep_alive: true
@@ -164,26 +164,29 @@ workspaces:
   display_name: "ᵗ◌"
   keep_alive: true
 - name: "13"
-  display_name: "ᵃ\U000F08F1◌"
+  display_name: "ᵐ◌"
+  keep_alive: true
 
 window_rules:
 - command: "move to workspace 3"
   match_process_name: "/Visual Studio Code|Code/"
 - command: "move to workspace 4"
   match_process_name: "/Obsidian/"
+- command: "move to workspace 5"
+  match_process_name: "/thorium/"
 - command: "move to workspace 8"
   match_process_name: "qBittorrent"
 - command: "move to workspace 9"
   match_process_name: "/Steam|steamwebhelper/"
 - command: "move to workspace 10"
-  match_process_name: "/Spotify|MusicBee/"
-  match_title: "/Soundcloud|Spotify|MusicBee/"
+  match_process_name: "/Ableton/"
 - command: "move to workspace 11"
   match_process_name: "/Telegram|64gram|Signal|Discord/"
 - command: "move to workspace 12"
   match_process_name: "/thunderbird/"
 - command: "move to workspace 13"
-  match_process_name: "/Ableton/"
+  match_process_name: "/Spotify|MusicBee/"
+  match_title: "/Soundcloud|Spotify|MusicBee/"
 
 - command: "ignore"
   match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
@@ -228,17 +231,8 @@ keybindings:
 - command: "exec wt"
   binding: "Alt+Enter"
 
-# - command: "exec thunderbird"
-#   binding: "Alt+T"
-
-# - command: "exec 'C:\\Users\\eco\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'"
-#   binding: "Alt+C"
-
 - command: "exec 'C:\\Program Files\\Git\\git-bash.exe'"
   binding: "Alt+B"
-
-- command: "exec 'c:\\Users\\eco\\AppData\\Roaming\\Spotify\\Spotify.exe'"
-  binding: "Alt+S"
 
 - command: "focus workspace recent"
   binding: "Alt+R"
@@ -254,9 +248,6 @@ keybindings:
 - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
   bindings: ["Alt+OemPipe"]
 
-# - command: "binding mode resize"
-#   binding: "Alt+R"
-
 - command: "tiling direction toggle"
   binding: "Alt+V"
 
@@ -270,7 +261,7 @@ keybindings:
   binding: "Alt+X"
 
 - command: "set minimized"
-  binding: "Alt+M"
+  binding: "Alt+Z"
 
 - command: "close"
   binding: "Alt+Q"
@@ -318,13 +309,13 @@ keybindings:
 - command: "focus workspace 9"
   binding: "Alt+9"
 - command: "focus workspace 10"
-  binding: "Alt+0"
+  binding: "Alt+A"
 - command: "focus workspace 11"
   binding: "Alt+C"
 - command: "focus workspace 12"
   binding: "Alt+T"
 - command: "focus workspace 13"
-  binding: "Alt+A"
+  binding: "Alt+M"
 
 - commands: ["move to workspace 1", "focus workspace 1"]
   binding: "Alt+Shift+1"
@@ -345,10 +336,10 @@ keybindings:
 - commands: ["move to workspace 9", "focus workspace 9"]
   bindings: ["Alt+Shift+9"]
 - commands: ["move to workspace 10", "focus workspace 10"]
-  bindings: ["Alt+Shift+0"]
+  bindings: ["Alt+Shift+A"]
 - commands: ["move to workspace 11", "focus workspace 11"]
   bindings: ["Alt+Shift+C"]
 - commands: ["move to workspace 12", "focus workspace 12"]
   bindings: ["Alt+Shift+T"]
 - commands: ["move to workspace 13", "focus workspace 13"]
-  bindings: ["Alt+Shift+A"]
+  bindings: ["Alt+Shift+M"]
