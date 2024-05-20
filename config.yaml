@@ -148,9 +148,9 @@ workspaces:
 - name: "5"
   display_name: "⁵\U000F1887◌"
 - name: "6"
-  display_name: "⁶\U000F08F1◌"
+  display_name: "⁶◌"
 - name: "7"
-  display_name: "⁷◌"
+  display_name: "⁷\U000F0703◌"
 - name: "8"
   display_name: "⁸◌"
 - name: "9"
@@ -163,14 +163,14 @@ workspaces:
 - name: "12"
   display_name: "ᵗ◌"
   keep_alive: true
+- name: "13"
+  display_name: "ᵃ\U000F08F1◌"
 
 window_rules:
 - command: "move to workspace 3"
   match_process_name: "/Visual Studio Code|Code/"
 - command: "move to workspace 4"
   match_process_name: "/Obsidian/"
-- command: "move to workspace 6"
-  match_process_name: "/Ableton/"
 - command: "move to workspace 8"
   match_process_name: "qBittorrent"
 - command: "move to workspace 9"
@@ -182,6 +182,8 @@ window_rules:
   match_process_name: "/Telegram|64gram|Signal|Discord/"
 - command: "move to workspace 12"
   match_process_name: "/thunderbird/"
+- command: "move to workspace 13"
+  match_process_name: "/Ableton/"
 
 - command: "ignore"
   match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
@@ -321,6 +323,8 @@ keybindings:
   binding: "Alt+C"
 - command: "focus workspace 12"
   binding: "Alt+T"
+- command: "focus workspace 13"
+  binding: "Alt+A"
 
 - commands: ["move to workspace 1", "focus workspace 1"]
   binding: "Alt+Shift+1"
@@ -346,3 +350,5 @@ keybindings:
   bindings: ["Alt+Shift+C"]
 - commands: ["move to workspace 12", "focus workspace 12"]
   bindings: ["Alt+Shift+T"]
+- commands: ["move to workspace 13", "focus workspace 13"]
+  bindings: ["Alt+Shift+A"]
