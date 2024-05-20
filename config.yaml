@@ -1,7 +1,7 @@
 general:
   focus_follows_cursor: false
   cursor_follows_focus: true
-  toggle_workspace_on_refocus: true
+  toggle_workspace_on_refocus: false
   show_floating_on_top: true
   floating_window_move_amount: "5%"
   center_new_floating_windows: true
@@ -225,8 +225,11 @@ keybindings:
 - command: "exec 'C:\\Users\\eco\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'"
   binding: "Alt+C"
 
-- command: "focus workspace recent"
+- command: "exec 'C:\\Program Files\\Git\\git-bash.exe'"
   binding: "Alt+B"
+
+- command: "focus workspace recent"
+  binding: "Alt+S"
 
 - command: "focus left"
   bindings: ["Alt+H", "Alt+Left"]
