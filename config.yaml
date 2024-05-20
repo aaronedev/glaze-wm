@@ -9,7 +9,7 @@ general:
 
 gaps:
   inner_gap: "2px"
-  outer_gap: "2px"
+  # outer_gap: "2px"
 
 focus_borders:
   active:
