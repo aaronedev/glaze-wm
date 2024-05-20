@@ -228,8 +228,11 @@ keybindings:
 - command: "exec 'C:\\Program Files\\Git\\git-bash.exe'"
   binding: "Alt+B"
 
-- command: "focus workspace recent"
+- command: "exec 'c:\\Users\\eco\\AppData\\Roaming\\Spotify\\Spotify.exe'"
   binding: "Alt+S"
+
+- command: "focus workspace recent"
+  binding: "Alt+R"
 
 - command: "focus left"
   bindings: ["Alt+H", "Alt+Left"]
@@ -242,8 +245,8 @@ keybindings:
 - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
   bindings: ["Alt+OemPipe"]
 
-- command: "binding mode resize"
-  binding: "Alt+R"
+# - command: "binding mode resize"
+#   binding: "Alt+R"
 
 - command: "tiling direction toggle"
   binding: "Alt+V"
