@@ -140,13 +140,13 @@ workspaces:
   display_name: "¹◌"
   keep_alive: true
 - name: "2"
-  display_name: "²◌"
+  display_name: "²\U000F1887◌"
 - name: "3"
   display_name: "³\U000F0A1E◌"
 - name: "4"
   display_name: "⁴\U000F1781◌"
 - name: "5"
-  display_name: "⁵\U000F1887◌"
+  display_name: "⁵◌"
 - name: "6"
   display_name: "⁶◌"
 - name: "7"
@@ -155,17 +155,17 @@ workspaces:
   display_name: "⁸◌"
 - name: "9"
   display_name: "⁹◌"
-- name: "10"
-  display_name: "ᵃ\U000F08F1◌"
-- name: "11"
-  display_name: "ᶜ◌"
-  keep_alive: true
 - name: "12"
   display_name: "ᵗ◌"
+  keep_alive: true
+- name: "11"
+  display_name: "ᶜ◌"
   keep_alive: true
 - name: "13"
   display_name: "ᵐ◌"
   keep_alive: true
+- name: "10"
+  display_name: "ᵃ\U000F08F1◌"
 
 window_rules:
 - command: "move to workspace 3"
