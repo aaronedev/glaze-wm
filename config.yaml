@@ -9,7 +9,7 @@ general:
 
 gaps:
   inner_gap: "2px"
-  outer_gap: "2px"
+  outer_gap: "3px 2px 2px 2px"
 
 focus_borders:
   active:
@@ -24,12 +24,14 @@ bar:
   opacity: 0.95
   height: "32px"
   font_family: "RobotoMono Nerd Font Mono"
-  font_size: "10px"
+  font_size: "12px"
   font_weight: "800"
-  border_radius: "12px"
-  border_width: "1px"
+  border_radius: "4px"
+  border_width: "2px"
   border_color: "#140c1d"
-  padding: "2px 0 2px 0"
+  margin: "2px 0 2px 0"
+  padding: "1px"
+  offset_y: "1px"
   background: "#0b0612"
   foreground: "#e7e2ea"
 
@@ -43,9 +45,10 @@ bar:
     label_no_internet: "<attr fs='25' fg='#9f1212'>◊ \U000F0C9B</attr>"
     label_ethernet: "<attr fs='25' fg='#50976e'>\U000F0A60</attr>"
     padding: "2px 4px"
-    margin: "2px 0"
-    # border_width: "2px"
-  # border_color: "#351d57"
+    margin: "2px 4px"
+    border_radius: "2px"
+    border_width: "1px"
+    border_color: "#153541"
 
   components_center:
   - type: "workspaces"
