@@ -156,7 +156,7 @@ workspaces:
 - name: "9"
   display_name: "⁹◌"
 - name: "12"
-  display_name: "ᵗ◌"
+  display_name: "❘ ᵗ◌"
   keep_alive: true
 - name: "11"
   display_name: "ᶜ◌"
@@ -172,8 +172,6 @@ window_rules:
   match_process_name: "/Visual Studio Code|Code/"
 - command: "move to workspace 4"
   match_process_name: "/Obsidian/"
-- command: "move to workspace 5"
-  match_process_name: "/thorium/"
 - command: "move to workspace 8"
   match_process_name: "qBittorrent"
 - command: "move to workspace 9"
