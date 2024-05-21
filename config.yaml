@@ -1,7 +1,7 @@
 general:
   focus_follows_cursor: false
   cursor_follows_focus: true
-  toggle_workspace_on_refocus: false
+  toggle_workspace_on_refocus: true
   show_floating_on_top: true
   floating_window_move_amount: "5%"
   center_new_floating_windows: true
@@ -26,8 +26,8 @@ bar:
   font_family: "RobotoMono Nerd Font Mono"
   font_size: "12px"
   font_weight: "800"
-  border_radius: "4px"
-  border_width: "2px"
+  border_radius: "8px"
+  border_width: "3px"
   border_color: "#140c1d"
   margin: "2px 0 2px 0"
   padding: "1px"
@@ -38,15 +38,15 @@ bar:
   components_left:
   - type: "system tray"
     label_expand_text: "<attr fs='18' fg='#5a97c3'>៚</attr>"
-    label_collapse_text: "<attr fs='22' fg='#355368'>៙</attr>"
+    label_collapse_text: "<attr fs='18' fg='#5a97c3'>៙</attr>"
     margin: "4px 0 4px 4px"
     padding: "2px 0 2px 4px"
   - type: "network"
-    label_no_internet: "<attr fs='25' fg='#9f1212'>◊ \U000F0C9B</attr>"
-    label_ethernet: "<attr fs='25' fg='#50976e'>\U000F0A60</attr>"
-    padding: "2px 4px"
-    margin: "2px 4px"
-    border_radius: "2px"
+    label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+    label_ethernet: "<attr>⦙</attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
+    padding: "1px 4px"
+    margin: "3px 4px"
+    border_radius: "1px"
     border_width: "1px"
     border_color: "#153541"
 
@@ -157,7 +157,7 @@ workspaces:
 - name: "6"
   display_name: "⁶\U000F0E1E◌"
 - name: "7"
-  display_name: "⁷\U000F0703◌"
+  display_name: "⁷\U000F0A21◌"
 - name: "8"
   display_name: "⁸◌"
 - name: "9"
@@ -169,7 +169,7 @@ workspaces:
   display_name: "ᶜ◌"
   keep_alive: true
 - name: "13"
-  display_name: "ᵐ◌"
+  display_name: "ˢ◌"
   keep_alive: true
 - name: "10"
   display_name: "ᵃ\U000F08F1◌"
@@ -192,8 +192,8 @@ window_rules:
 - command: "move to workspace 12"
   match_process_name: "/thunderbird/"
 - command: "move to workspace 13"
-  match_process_name: "/Spotify|MusicBee/"
-  match_title: "/Soundcloud|Spotify|MusicBee/"
+  match_process_name: "/Spotify|MusicBee|foobar2000/"
+  match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
 
 - command: "ignore"
   match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
@@ -268,7 +268,7 @@ keybindings:
   binding: "Alt+X"
 
 - command: "set minimized"
-  binding: "Alt+Z"
+  binding: "Alt+M"
 
 - command: "close"
   binding: "Alt+Q"
@@ -322,7 +322,7 @@ keybindings:
 - command: "focus workspace 12"
   binding: "Alt+T"
 - command: "focus workspace 13"
-  binding: "Alt+M"
+  binding: "Alt+S"
 
 - commands: ["move to workspace 1", "focus workspace 1"]
   binding: "Alt+Shift+1"
@@ -349,4 +349,4 @@ keybindings:
 - commands: ["move to workspace 12", "focus workspace 12"]
   bindings: ["Alt+Shift+T"]
 - commands: ["move to workspace 13", "focus workspace 13"]
-  bindings: ["Alt+Shift+M"]
+  bindings: ["Alt+Shift+S"]
