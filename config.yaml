@@ -5,7 +5,7 @@ general:
   show_floating_on_top: true
   floating_window_move_amount: "5%"
   center_new_floating_windows: true
-  window_animations: "false"
+  window_animations: "unchanged"
 
 gaps:
   inner_gap: "2px"
@@ -48,7 +48,7 @@ bar:
     foreground: "#975bff"
     label_horizontal: "\U000F0054"
     label_vertical: "\U000F0045"
-    margin: "0 2px 0 4px"
+    margin: "0 4px 0 4px"
     padding: "4px"
     border_radius: "2px"
     border_width: "2px"
@@ -69,7 +69,7 @@ bar:
   - type: "network"
     label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
     label_ethernet: "<attr>⦙</attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
-    margin: "0 4px 0 2px"
+    margin: "0 4px 0 4px"
     padding: "4px"
     border_radius: "2px"
     border_width: "2px"
@@ -125,7 +125,7 @@ bar:
   - type: "clock"
     margin: "0 2px 0 4px"
     foreground: "#b4d2ff"
-    time_formatting: "⦙ HH:mm"
+    time_formatting: "⦙ dddd, dd MMM yyyy ⦙ HH:mm"
 
 workspaces:
 - name: "1"
