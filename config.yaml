@@ -140,26 +140,26 @@ workspaces:
 - name: "5"
   display_name: "⁵◌"
 - name: "6"
-  display_name: "⁶◌"
+  display_name: "⁶◌"
 - name: "7"
-  display_name: "⁷◌"
+  display_name: "⁷◌"
 - name: "8"
-  display_name: "⁸◌"
+  display_name: "⁸◌"
 - name: "9"
   display_name: "⁹◌"
-- name: "14"
+- name: "10"
   display_name: "⦙ ˢ\U000F0E1E◌"
   keep_alive: true
-- name: "12"
+- name: "11"
   display_name: "ᵗ◌"
   keep_alive: true
-- name: "11"
+- name: "12"
   display_name: "ᶜ◌"
   keep_alive: true
 - name: "13"
   display_name: "ᵐ◌ ⦙"
   keep_alive: true
-- name: "10"
+- name: "14"
   display_name: "ᵃ\U000F08F1◌"
 
 window_rules:
@@ -167,21 +167,21 @@ window_rules:
   match_process_name: "/Visual Studio Code|Code/"
 - command: "move to workspace 4"
   match_process_name: "/Obsidian/"
-- command: "move to workspace 14"
-  match_process_name: "/superProductivity/"
 - command: "move to workspace 8"
-  match_process_name: "qBittorrent"
+  match_process_name: "/gimp|GIMP|paintdotnet|Krita|krita|krita-bin|krita-x64|krita-x86|inkscape/"
 - command: "move to workspace 9"
   match_process_name: "/Steam|steamwebhelper/"
 - command: "move to workspace 10"
-  match_process_name: "/Ableton/"
+  match_process_name: "/superProductivity/"
 - command: "move to workspace 11"
-  match_process_name: "/Telegram|64gram|Signal|Discord/"
-- command: "move to workspace 12"
   match_process_name: "/thunderbird/"
+- command: "move to workspace 12"
+  match_process_name: "/Telegram|64gram|Signal|Discord/"
 - command: "move to workspace 13"
   match_process_name: "/Spotify|MusicBee|foobar2000/"
   match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
+- command: "move to workspace 14"
+  match_process_name: "/Ableton/"
 
 - command: "ignore"
   match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
@@ -304,15 +304,15 @@ keybindings:
 - command: "focus workspace 9"
   binding: "Alt+9"
 - command: "focus workspace 10"
-  binding: "Alt+A"
+  binding: "Alt+S"
 - command: "focus workspace 11"
-  binding: "Alt+C"
-- command: "focus workspace 12"
   binding: "Alt+T"
+- command: "focus workspace 12"
+  binding: "Alt+C"
 - command: "focus workspace 13"
   binding: "Alt+M"
 - command: "focus workspace 14"
-  binding: "Alt+S"
+  binding: "Alt+A"
 
 - commands: ["move to workspace 1", "focus workspace 1"]
   binding: "Alt+Shift+1"
@@ -333,12 +333,12 @@ keybindings:
 - commands: ["move to workspace 9", "focus workspace 9"]
   bindings: ["Alt+Shift+9"]
 - commands: ["move to workspace 10", "focus workspace 10"]
-  bindings: ["Alt+Shift+A"]
-- commands: ["move to workspace 11", "focus workspace 11"]
-  bindings: ["Alt+Shift+C"]
-- commands: ["move to workspace 12", "focus workspace 12"]
-  bindings: ["Alt+Shift+T"]
-- commands: ["move to workspace 13", "focus workspace 13"]
   bindings: ["Alt+Shift+S"]
-- commands: ["move to workspace 14", "focus workspace 14"]
+- commands: ["move to workspace 11", "focus workspace 11"]
+  bindings: ["Alt+Shift+T"]
+- commands: ["move to workspace 12", "focus workspace 12"]
+  bindings: ["Alt+Shift+C"]
+- commands: ["move to workspace 13", "focus workspace 13"]
   bindings: ["Alt+Shift+M"]
+- commands: ["move to workspace 14", "focus workspace 14"]
+  bindings: ["Alt+Shift+A"]
