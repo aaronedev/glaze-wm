@@ -196,6 +196,9 @@ window_rules:
 - command: "resize borders 0px -7px -7px -7px"
   match_process_name: "/steam|steamwebhelper/"
 
+- command: "resize borders 0px 0px 0px 3px"
+  match_process_name: "/thorium/"
+
 - command: "set width 25%"
   match_process_name: "thorium"
   match_title: "/ChatGPT/"
