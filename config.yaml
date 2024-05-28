@@ -31,7 +31,7 @@ bar:
   border_color: "#080110"
   # margin: "2px"
   # padding: "1px"
-  offset_y: "2px"
+  offset_y: "1px"
   background: "#0b0612"
   foreground: "#e7e2ea"
 
