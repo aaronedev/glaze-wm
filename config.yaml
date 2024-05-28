@@ -1,6 +1,6 @@
 general:
   focus_follows_cursor: false
-  cursor_follows_focus: true
+  cursor_follows_focus: false
   toggle_workspace_on_refocus: true
   show_floating_on_top: true
   floating_window_move_amount: "5%"
@@ -125,7 +125,7 @@ bar:
   - type: "clock"
     margin: "0 2px 0 4px"
     foreground: "#b4d2ff"
-    time_formatting: "⦙ dddd, dd.MM.yyyy (ww) ⦙ HH:mm"
+    time_formatting: "⦙ dddd, dd/MM/yyyy (ww) ⦙ HH:mm"
 
 workspaces:
 - name: "1"
@@ -134,9 +134,9 @@ workspaces:
 - name: "2"
   display_name: "²\U000F1887◌"
 - name: "3"
-  display_name: "³\U000F0A1E◌"
+  display_name: "³\U000F1781◌"
 - name: "4"
-  display_name: "⁴\U000F1781◌"
+  display_name: "⁴\U000F0A1E◌"
 - name: "5"
   display_name: "⁵◌"
 - name: "6"
@@ -164,9 +164,9 @@ workspaces:
 
 window_rules:
 - command: "move to workspace 3"
-  match_process_name: "/Visual Studio Code|Code/"
-- command: "move to workspace 4"
   match_process_name: "/Obsidian/"
+- command: "move to workspace 4"
+  match_process_name: "/Visual Studio Code|Code/"
 - command: "move to workspace 8"
   match_process_name: "/gimp|GIMP|paintdotnet|Krita|krita|krita-bin|krita-x64|krita-x86|inkscape/"
 - command: "move to workspace 9"
@@ -189,6 +189,9 @@ window_rules:
 - command: "ignore"
   match_title: "[Pp]icture.in.[Pp]icture"
   match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
+
+- command: "ignore"
+  match_process_name: "RustClient"
 
 - command: "set floating"
   match_class_name: "#32770"
