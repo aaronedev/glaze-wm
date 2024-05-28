@@ -5,7 +5,7 @@ general:
   show_floating_on_top: true
   floating_window_move_amount: "5%"
   center_new_floating_windows: true
-  window_animations: "unchanged"
+  window_animations: "false"
 
 gaps:
   inner_gap: "2px"
