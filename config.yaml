@@ -5,7 +5,7 @@ general:
   show_floating_on_top: true
   floating_window_move_amount: "5%"
   center_new_floating_windows: true
-  window_animations: "false"
+  window_animations: "unchanged"
 
 gaps:
   inner_gap: "2px"
@@ -105,7 +105,7 @@ bar:
     margin: "0 4px"
     border_width: "0px 0 0px 0"
     border_color: "#563fb1"
-    label: "<attr fs='24' fg='#ed5050'></attr><attr fs='24' fg='#574141'>˷</attr><attr fg='#ed9696'>{percent_usage}% </attr><attr fs='12' fg='#4bc383'>⦙</attr>"
+    label: "<attr fs='24' fg='#cd0b0b'></attr><attr fs='24' fg='#574141'>˷</attr><attr fg='#ed9696'>{percent_usage}% </attr><attr fs='12' fg='#4bc383'>⦙</attr>"
     refresh_interval_ms: 1000
   - type: "weather"
     margin: "0 4px"
@@ -192,6 +192,9 @@ window_rules:
 
 - command: "ignore"
   match_process_name: "RustClient"
+
+- command: "ignore"
+  match_process_name: "qalculate-qt"
 
 - command: "set floating"
   match_class_name: "#32770"
