@@ -140,7 +140,7 @@ workspaces:
 - name: "5"
   display_name: "⁵◌"
 - name: "6"
-  display_name: "⁶◌"
+  display_name: "⁶◌"
 - name: "7"
   display_name: "⁷◌"
 - name: "8"
@@ -216,6 +216,9 @@ window_rules:
 - command: "set width 20%"
   match_process_name: "SamsungFlow"
   match_title: "/Samsung Flow|SamsungFlowDesktop/"
+
+- command: "ignore"
+  match_process_name: "mmc"
 
 binding_modes:
 - name: "resize"
