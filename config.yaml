@@ -149,16 +149,12 @@ workspaces:
   display_name: "⁹◌"
 - name: "10"
   display_name: "⦙ ᵗ◌"
-  keep_alive: true
 - name: "11"
   display_name: "ˢ\U000F0E1E◌"
-  keep_alive: true
 - name: "12"
   display_name: "ᶜ◌"
-  keep_alive: true
 - name: "13"
   display_name: "ᵐ◌ ⦙"
-  keep_alive: true
 - name: "14"
   display_name: "ᵃ\U000F08F1◌"
 
