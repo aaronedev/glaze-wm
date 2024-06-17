@@ -69,6 +69,11 @@ bar:
   - type: "network"
     label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
     label_ethernet: "<attr>⦙</attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
+    label_wifi: "<attr>⦙</attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
+    label_vpn: "<attr>⦙</attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
+    label_ethernet_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+    label_wifi_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+    label_vpn_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
     margin: "0 4px 0 4px"
     padding: "4px"
     border_radius: "2px"
@@ -147,6 +152,8 @@ workspaces:
   display_name: "⁸◌"
 - name: "9"
   display_name: "⁹◌"
+- name: "0"
+  display_name: "⁰◌"
 - name: "10"
   display_name: "⦙ ᵗ◌"
 - name: "11"
@@ -314,6 +321,8 @@ keybindings:
   binding: "Alt+8"
 - command: "focus workspace 9"
   binding: "Alt+9"
+- command: "focus workspace 0"
+  binding: "Alt+0"
 - command: "focus workspace 11"
   binding: "Alt+S"
 - command: "focus workspace 10"
@@ -343,6 +352,8 @@ keybindings:
   binding: "Alt+Shift+8"
 - commands: ["move to workspace 9", "focus workspace 9"]
   bindings: ["Alt+Shift+9"]
+- commands: ["move to workspace 0", "focus workspace 0"]
+  bindings: ["Alt+Shift+0"]
 - commands: ["move to workspace 10", "focus workspace 10"]
   bindings: ["Alt+Shift+T"]
 - commands: ["move to workspace 11", "focus workspace 11"]
