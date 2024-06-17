@@ -195,6 +195,9 @@ window_rules:
 - command: "set floating"
   match_class_name: "#32770"
 
+- command: "ignore"
+  match_process_name: "wiztree"
+
 - command: "resize borders 0px -7px -7px -7px"
   match_process_name: "/steam|steamwebhelper/"
 
