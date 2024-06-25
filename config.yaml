@@ -27,8 +27,8 @@ bar:
   font_size: "14px"
   font_weight: "800"
   border_radius: "10px"
-  border_width: "2px"
-  border_color: "#080110"
+  border_width: "1px"
+  border_color: "#1c1424"
   offset_y: "1px"
   background: "#11091c"
   foreground: "#fcf6ff"
@@ -46,7 +46,7 @@ bar:
       foreground: "#ebb0ff"
       label_horizontal: "\U000F0054"
       label_vertical: "\U000F0045"
-      margin: "0 8px 0 4px"
+      margin: "0 6px 0 4px"
       padding: "4px"
       border_radius: "2px"
       border_width: "2px"
@@ -86,7 +86,7 @@ bar:
       border_color: "#451481"
     - type: "music"
       label_not_playing: "<attr fs='14' fg='#75c3b6'>\U000F038A</attr> <attr g='#beece4'> {artist_name}</attr>"
-      label_paused: "<attr fs='14' fg='#c34848'></attr> <attr g='#e2b9b9'> {artist_name}</attr>"
+      label_paused: "<attr fs='14' fg='#c34848'></attr> <attr fg='#e2b9b9'> {artist_name}</attr>"
       label_playing: "<attr fs='14' fg='#93e984'></attr> <attr fg='#ddf6d9'> {artist_name}</attr>"
       max_artist_length: 24
       max_title_length: 20
@@ -131,150 +131,138 @@ bar:
       time_formatting: "⦙ dddd, dd/MM/yyyy (ww) ⦙ HH:mm"
 
 workspaces:
-  # Main Workspace (Firefox)
+  # 1) Main Workspace (Firefox)
   - name: "1"
     display_name: "⦙¹"
     keep_alive: true
-  # Second Worskpace (Thorium)
+  # 2) Second Worskpace (Thorium)
   - name: "2"
     display_name: "²\U000F1887"
-  # Notes and Thoughts Workspace (Obsidian)
+  # 3) Notes and Thoughts Workspace (Obsidian)
   - name: "3"
     display_name: "³\U000F1781"
-  # Visual Studio Code Workspace (Visual Studio Code)
+  # 4) Visual Studio Code Workspace (Visual Studio Code)
   - name: "4"
     display_name: "⁴\U000F0A1E"
-  # Terminal Workspace (Windows Terminal)
+  # 5) Terminal Workspace (Windows Terminal)
   - name: "5"
     display_name: "⁵"
-  # Server Workspace (mobaXterm, wsl, etc.)
+  # 6) Server Workspace (mobaXterm, wsl, etc.)
   - name: "6"
     display_name: "⁶"
-  # Unknown workspace
+  # 7) Unknown workspace
   - name: "7"
     display_name: "⁷"
-  # Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
   - name: "8"
     display_name: "⁸"
-  # Unknown workspace
+  # 9) Unknown workspace
   - name: "9"
     display_name: "⁹"
-  # Gaming Workspace (Steam)
+  # 0) Gaming Workspace (Steam)
   - name: "0"
     display_name: "⁰"
-  # Email (Thunderbird)
+  # T) Email (Thunderbird)
   - name: "10"
-    display_name: "⦙ᵗ"
-  # Productivity (Super Productivity)
+    display_name: "⦙ ᵗ"
+  # S) Productivity (Super Productivity)
   - name: "11"
     display_name: "ˢ\U000F0E1E"
-  # Communication (Telegram, Signal, Discord)
+  # C) Communication (Telegram, Signal, Discord)
   - name: "12"
     display_name: "ᶜ"
-  # Music (Spotify, MusicBee, foobar2000)
+  # M) Music (Spotify, MusicBee, foobar2000)
   - name: "13"
-    display_name: "⦙ᵐ⦙"
-  # Android Mobile Phone Workspace (Samsung Flow)
+    display_name: "ᵐ⦙"
+  # A) Android Mobile Phone Workspace (Samsung Flow)
   - name: "14"
     display_name: "ᵃ"
-  # Laptop Workspace (mobaXterm, wsl, etc.)
+  # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "15"
     display_name: "ᶰ⦙"
-  # Ableton Workspace (DAW)
+  # none) Ableton Workspace (DAW)
   - name: "16"
     display_name: "ᵃ\U000F08F1⦙"
 
 window_rules:
-  # Main Workspace (Firefox)
+   # 1) Main Workspace (Firefox)
   - command: "move to workspace 1"
     match_process_name: "/firefox/"
-  # Second Workspace (Thorium)
+  # 2) Second Workspace (Thorium)
   - command: "move to workspace 2"
     match_process_name: "/thorium/"
-  # Notes and Thoughts Workspace (Obsidian)
+  # 3) Notes and Thoughts Workspace (Obsidian)
   - command: "move to workspace 3"
     match_process_name: "/Obsidian/"
-  # Visual Studio Code Workspace (Visual Studio Code)
+  # 4) Visual Studio Code Workspace (Visual Studio Code)
   - command: "move to workspace 4"
     match_process_name: "/Visual Studio Code|Code/"
-  # Terminal Workspace (Windows Terminal)
+  # 5) Terminal Workspace (Windows Terminal)
   - command: "move to workspace 5"
     match_process_name: "/Windows Terminal/"
-  # Server Workspace (mobaXterm, wsl, etc.)
+  # 6) Server Workspace (mobaXterm, wsl, etc.)
   - command: "move to workspace 6"
     match_process_name: "/mobaXterm|wsl/"
-  # Unknown Workspace
+  # 7) Unknown Workspace
   - command: "move to workspace 7"
     match_process_name: "/unknown/"
-  # Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
   - command: "move to workspace 8"
     match_process_name: "/GIMP|Krita|Inkscape/"
-  # Unknown Workspace
+  # 9) Unknown Workspace
   - command: "move to workspace 9"
     match_process_name: "/unknown/"
-  # Gaming Workspace (Steam)
+  # 0) Gaming Workspace (Steam)
   - command: "move to workspace 0"
     match_process_name: "/Steam|steamwebhelper/"
-  # Email (Thunderbird)
+  # T) Email (Thunderbird)
   - command: "move to workspace 10"
     match_process_name: "thunderbird"
-  # Productivity (Super Productivity)
+  # S) Productivity (Super Productivity)
   - command: "move to workspace 11"
     match_process_name: "/superProductivity/"
-  # Communication (Telegram, Signal, Discord)
+  # C) Communication (Telegram, Signal, Discord)
   - command: "move to workspace 12"
     match_process_name: "/Telegram|64gram|Signal|Discord/"
-  # Music (Spotify, MusicBee, foobar2000)
+  # M) Music (Spotify, MusicBee, foobar2000)
   - command: "move to workspace 13"
     match_process_name: "/Spotify|MusicBee|foobar2000/"
     match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
-  # Laptop Workspace (mobaXterm, wsl, etc.)
+  # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - command: "move to workspace 14"
     match_process_name: "/mobaXterm|wsl/"
-  # Android Mobile Phone Workspace (Samsung Flow)
+  # A) Android Mobile Phone Workspace (Samsung Flow)
   - command: "move to workspace 15"
     match_process_name: "/samsungflow|SamsungFlowDesktop"
-  # Ableton Workspace (DAW)
+  # none) Ableton Workspace (DAW)
   - command: "move to workspace 16"
     match_process_name: "/Ableton/"
-  # Ignore Task Manager and Screen Clipping
   - command: "ignore"
     match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
-  # Ignore Picture in Picture
   - command: "ignore"
     match_title: "[Pp]icture.in.[Pp]icture"
     match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
-  # Ignore RustClient
   - command: "ignore"
     match_process_name: "RustClient"
-  # Ignore qalculate-qt
   - command: "ignore"
     match_process_name: "qalculate-qt"
-  # Set floating dialogs
   - command: "set floating"
-    match_class_name: "#32770"
-  # Ignore wiztree
+    match_class_name: "32770"
   - command: "ignore"
     match_process_name: "wiztree"
-  # Resize borders for Steam
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "/steam|steamwebhelper/"
-  # Resize borders for Thorium
   - command: "resize borders 0px 0px 0px 3px"
     match_process_name: "/thorium/"
-  # Set width for Thorium
   - command: "set width 25%"
     match_process_name: "thorium"
     match_title: "/ChatGPT/"
-  # Set width for Super Productivity
   - command: "set width 605px"
     match_process_name: "superProductivity"
     match_title: "/Super Productivity/"
-  # Set width for Samsung Flow
   - command: "set width 20%"
     match_process_name: "SamsungFlow"
     match_title: "/Samsung Flow|SamsungFlowDesktop/"
-  # Ignore Microsoft Management Console
   - command: "ignore"
     match_process_name: "mmc"
 
@@ -342,106 +330,100 @@ keybindings:
   - command: "move down"
     bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
 
-  # Main Workspace (Firefox)
+  # 1) Main Workspace (Firefox)
   - command: "focus workspace 1"
     binding: "Alt+1"
-  # Second Workspace (Thorium)
+  # 2) Second Workspace (Thorium)
   - command: "focus workspace 2"
     binding: "Alt+2"
-  # Notes and Thoughts Workspace (Obsidian)
+  # 3) Notes and Thoughts Workspace (Obsidian)
   - command: "focus workspace 3"
     binding: "Alt+3"
-  # Visual Studio Code Workspace (Visual Studio Code)
+  # 4) Visual Studio Code Workspace (Visual Studio Code)
   - command: "focus workspace 4"
     binding: "Alt+4"
-  # Terminal Workspace (Windows Terminal)
+  # 5) Terminal Workspace (Windows Terminal)
   - command: "focus workspace 5"
     binding: "Alt+5"
-  # Server Workspace (mobaXterm, wsl, etc.)
+  # 6) Server Workspace (mobaXterm, wsl, etc.)
   - command: "focus workspace 6"
     binding: "Alt+6"
-  # Unknown workspace
+  # 7) Unknown workspace
   - command: "focus workspace 7"
     binding: "Alt+7"
-  # Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
   - command: "focus workspace 8"
     binding: "Alt+8"
-  # Unknown workspace
+  # 9) Unknown workspace
   - command: "focus workspace 9"
     binding: "Alt+9"
-  # Gaming Workspace (Steam)
+  # 0) Gaming Workspace (Steam)
   - command: "focus workspace 0"
     binding: "Alt+0"
-  # Email (Thunderbird)
+  # T) Email (Thunderbird)
   - command: "focus workspace 10"
     binding: "Alt+T"
-  # Productivity (Super Productivity)
+  # S) Productivity (Super Productivity)
   - command: "focus workspace 11"
     binding: "Alt+S"
-  # Communication (Telegram, Signal, Discord)
+  # C) Communication (Telegram, Signal, Discord)
   - command: "focus workspace 12"
     binding: "Alt+C"
-  # Music (Spotify, MusicBee, foobar2000)
+  # M) Music (Spotify, MusicBee, foobar2000)
   - command: "focus workspace 13"
     binding: "Alt+M"
-  # Android Workspace (Samsung Flow)
+  # A) Android Workspace (Samsung Flow)
   - command: "focus workspace 14"
     binding: "Alt+A"
-  # Laptop Workspace (mobaXterm, wsl, etc.)
+  # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - command: "focus workspace 15"
     binding: "Alt+N"
-  # # Ableton Workspace (DAW)
-  # - command: "focus workspace 16"
-  #   binding: "Alt+A"
 
-  # Main Workspace (Firefox)
+   # 1) Main Workspace (Firefox)
   - commands: ["move to workspace 1", "focus workspace 1"]
     binding: "Alt+Shift+1"
-  # Second Workspace (Thorium)
+  # 2) Second Workspace (Thorium)
   - commands: ["move to workspace 2", "focus workspace 2"]
     binding: "Alt+Shift+2"
-  # Notes and Thoughts Workspace (Obsidian)
+  # 3) Notes and Thoughts Workspace (Obsidian)
   - commands: ["move to workspace 3", "focus workspace 3"]
     binding: "Alt+Shift+3"
-  # Visual Studio Code Workspace (Visual Studio Code)
+  # 4) Visual Studio Code Workspace (Visual Studio Code)
   - commands: ["move to workspace 4", "focus workspace 4"]
     binding: "Alt+Shift+4"
-  # Terminal Workspace (Windows Terminal)
+  # 5) Terminal Workspace (Windows Terminal)
   - commands: ["move to workspace 5", "focus workspace 5"]
     binding: "Alt+Shift+5"
-  # Server Workspace (mobaXterm, wsl, etc.)
+  # 6) Server Workspace (mobaXterm, wsl, etc.)
   - commands: ["move to workspace 6", "focus workspace 6"]
     binding: "Alt+Shift+6"
-  # Unknown workspace
+  # 7) Unknown workspace
   - commands: ["move to workspace 7", "focus workspace 7"]
     binding: "Alt+Shift+7"
-  # Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
   - commands: ["move to workspace 8", "focus workspace 8"]
     binding: "Alt+Shift+8"
-  # Unknown workspace
+  # 9) Unknown workspace
   - commands: ["move to workspace 9", "focus workspace 9"]
     binding: "Alt+Shift+9"
-  # Gaming Workspace (Steam)
+  # 0) Gaming Workspace (Steam)
   - commands: ["move to workspace 0", "focus workspace 0"]
     binding: "Alt+Shift+0"
-  # Email (Thunderbird)
+  # T) Email (Thunderbird)
   - commands: ["move to workspace 10", "focus workspace 10"]
     binding: "Alt+Shift+T"
-  # Productivity (Super Productivity)
+  # S) Productivity (Super Productivity)
   - commands: ["move to workspace 11", "focus workspace 11"]
     binding: "Alt+Shift+S"
-  # Communication (Telegram, Signal, Discord)
+  # C) Communication (Telegram, Signal, Discord)
   - commands: ["move to workspace 12", "focus workspace 12"]
     binding: "Alt+Shift+C"
-  # Music (Spotify, MusicBee, foobar2000)
+  # M) Music (Spotify, MusicBee, foobar2000)
   - commands: ["move to workspace 13", "focus workspace 13"]
     binding: "Alt+Shift+M"
-  # Android Mobile Phone Workspace (Samsung Flow)
+  # A) Android Mobile Phone Workspace (Samsung Flow)
   - commands: ["move to workspace 14", "focus workspace 14"]
     binding: "Alt+Shift+A"
-  # Laptop Workspace (mobaXterm, wsl, etc.)
+  # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - commands: ["move to workspace 15", "focus workspace 15"]
     binding: "Alt+Shift+N"
-  # # Ableton Workspace (DAW)
-  # - commands: ["move to workspace 16", "focus workspace 16"]
-  #   binding: "Alt+Shift+A"
