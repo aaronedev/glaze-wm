@@ -186,11 +186,7 @@ workspaces:
 
 window_rules:
   # 1) Main Workspace (Firefox)
-  - command: "move to workspace 1"
-    match_process_name: "/firefox/"
   # 2) Second Workspace (Thorium)
-  - command: "move to workspace 2"
-    match_process_name: "/thorium/"
   # 3) Notes and Thoughts Workspace (Obsidian)
   - command: "move to workspace 3"
     match_process_name: "/Obsidian/"
@@ -198,23 +194,15 @@ window_rules:
   - command: "move to workspace 4"
     match_process_name: "/Visual Studio Code|Code/"
   # 5) Terminal Workspace (Windows Terminal)
-  - command: "move to workspace 5"
-    match_process_name: "/Windows Terminal/"
   # 6) Server Workspace (mobaXterm, wsl, etc.)
-  - command: "move to workspace 6"
-    match_process_name: "/mobaXterm|wsl/"
   # 7) Unknown Workspace
-  - command: "move to workspace 7"
-    match_process_name: "/unknown/"
   # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
   - command: "move to workspace 8"
     match_process_name: "/GIMP|Krita|Inkscape/"
   # 9) Unknown Workspace
-  - command: "move to workspace 9"
-    match_process_name: "/unknown/"
   # 0) Gaming Workspace (Steam)
   - command: "move to workspace 0"
-    match_process_name: "/Steam|steamwebhelper/"
+    match_process_name: "steamwebhelper"
   # T) Email (Thunderbird)
   - command: "move to workspace 10"
     match_process_name: "thunderbird"
@@ -237,6 +225,7 @@ window_rules:
   # none) Ableton Workspace (DAW)
   - command: "move to workspace 16"
     match_process_name: "/Ableton/"
+
   - command: "ignore"
     match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
   - command: "ignore"
@@ -297,6 +286,7 @@ keybindings:
     bindings: ["Alt+J", "Alt+Down"]
   - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
     bindings: ["Alt+OemPipe"]
+
   - command: "tiling direction toggle"
     binding: "Alt+V"
   - command: "focus mode toggle"
@@ -309,10 +299,12 @@ keybindings:
     binding: "Alt+Z"
   - command: "close"
     binding: "Alt+Q"
+
   - command: "exit wm"
     binding: "Alt+Shift+E"
   - command: "reload config"
     binding: "Alt+Shift+R"
+
   - command: "resize width -2%"
     binding: "Alt+U"
   - command: "resize width +2%"
@@ -321,6 +313,7 @@ keybindings:
     binding: "Alt+O"
   - command: "resize height -2%"
     binding: "Alt+I"
+
   - command: "move left"
     bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
   - command: "move right"
