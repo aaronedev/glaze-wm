@@ -36,430 +36,429 @@ bar:
   foreground: "#fcf6ff"
 
   components_left:
-  - type: "system tray"
-    label_expand_text: "<attr fs='18' fg='#5a97c3'>៚</attr>"
-    label_collapse_text: "<attr fs='18' fg='#5a97c3'>៙</attr>"
-    margin: "2px 4px 2px 4px"
-    padding: "4px 2px 4px 2px"
-    border_radius: "3px"
+    - type: "system tray"
+      label_expand_text: "<attr fs='18' fg='#5a97c3'>៚</attr>"
+      label_collapse_text: "<attr fs='18' fg='#5a97c3'>៙</attr>"
+      margin: "2px 4px 2px 4px"
+      padding: "4px 2px 4px 2px"
+      border_radius: "3px"
 
   components_center:
-  - type: "tiling direction"
-    foreground: "#e18dff"
-    label_horizontal: "\U000F0054"
-    label_vertical: "\U000F0045"
-    margin: "0 4px 0 4px"
-    padding: "4px"
-    border_radius: "2px"
-    border_width: "2px"
-    font_size: "24px"
-    border_color: "#221949"
-  - type: "workspaces"
-    font_size: "24px"
-    border_color: "#221949"
-    margin: "-8px 0px -8px 0px"
-    focused_workspace_background: "#240a50"
-    focused_workspace_foreground: "#feeeff"
-  - type: "binding mode"
-    border_radius: "2px"
-    border_width: "2px"
-    margin: "0 4px"
-    font_size: "20px"
-    border_color: "#5a42c9"
-  - type: "network"
-    label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
-    label_ethernet: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
-    label_wifi: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
-    label_vpn: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
-    label_ethernet_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
-    label_wifi_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
-    label_vpn_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
-    margin: "0 4px 0 4px"
-    padding: "4px"
-    border_radius: "2px"
-    border_width: "2px"
-    border_color: "#153541"
-  - type: "volume"
-    label_mute: "<attr fs='24' fg='#8a8aff'></attr><attr fs='24' fg='#3b3b4c'>˷</attr><attr fs='12' fg='#a9a9cc'>{volume_level}%</attr>"
-    label_low: "<attr fs='24' fg='#f46e6e'></attr><attr fs='24' fg='#564040'>˷</attr><attr fs='12' fg='#cfa1a1'>{volume_level}%</attr>"
-    label_medium: "<attr fs='24' fg='#f9ad2c'></attr><attr fs='24' fg='#676051'>˷</attr><attr fs='12' fg='#dbcdb2'>{volume_level}%</attr>"
-    label_high: "<attr fs='24' fg='#9bff9b'></attr><attr fs='24' fg='#516551'>˷</attr><attr fs='12' fg='#add1ad'>{volume_level}%</attr>"
-    margin: "0 4px"
-    border_color: "#451481"
-  - type: "music"
-    label_not_playing: "<attr fs='13' fg='#75c3b6'>\U000F038A</attr> <attr g='#beece4'> {artist_name}</attr>"
-    label_paused: "<attr fs='13' fg='#c34848'></attr> <attr g='#e2b9b9'> {artist_name}</attr>"
-    label_playing: "<attr fs='13' fg='#93e984'></attr> <attr fg='#ddf6d9'> {artist_name}</attr>"
-    max_artist_length: 24
-    max_title_length: 20
-    margin: "0 4px"
-    border_color: "#18072d"
+    - type: "tiling direction"
+      foreground: "#e18dff"
+      label_horizontal: "\U000F0054"
+      label_vertical: "\U000F0045"
+      margin: "0 4px 0 4px"
+      padding: "4px"
+      border_radius: "2px"
+      border_width: "2px"
+      font_size: "24px"
+      border_color: "#221949"
+    - type: "workspaces"
+      font_size: "24px"
+      border_color: "#221949"
+      margin: "-8px 0px -8px 0px"
+      focused_workspace_background: "#240a50"
+      focused_workspace_foreground: "#feeeff"
+    - type: "binding mode"
+      border_radius: "2px"
+      border_width: "2px"
+      margin: "0 4px"
+      font_size: "20px"
+      border_color: "#5a42c9"
+    - type: "network"
+      label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+      label_ethernet: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
+      label_wifi: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
+      label_vpn: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
+      label_ethernet_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+      label_wifi_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+      label_vpn_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+      margin: "0 4px 0 4px"
+      padding: "4px"
+      border_radius: "2px"
+      border_width: "2px"
+      border_color: "#153541"
+    - type: "volume"
+      label_mute: "<attr fs='24' fg='#8a8aff'></attr><attr fs='24' fg='#3b3b4c'>˷</attr><attr fs='12' fg='#a9a9cc'>{volume_level}%</attr>"
+      label_low: "<attr fs='24' fg='#f46e6e'></attr><attr fs='24' fg='#564040'>˷</attr><attr fs='12' fg='#cfa1a1'>{volume_level}%</attr>"
+      label_medium: "<attr fs='24' fg='#f9ad2c'></attr><attr fs='24' fg='#676051'>˷</attr><attr fs='12' fg='#dbcdb2'>{volume_level}%</attr>"
+      label_high: "<attr fs='24' fg='#9bff9b'></attr><attr fs='24' fg='#516551'>˷</attr><attr fs='12' fg='#add1ad'>{volume_level}%</attr>"
+      margin: "0 4px"
+      border_color: "#451481"
+    - type: "music"
+      label_not_playing: "<attr fs='13' fg='#75c3b6'>\U000F038A</attr> <attr g='#beece4'> {artist_name}</attr>"
+      label_paused: "<attr fs='13' fg='#c34848'></attr> <attr g='#e2b9b9'> {artist_name}</attr>"
+      label_playing: "<attr fs='13' fg='#93e984'></attr> <attr fg='#ddf6d9'> {artist_name}</attr>"
+      max_artist_length: 24
+      max_title_length: 20
+      margin: "0 4px"
+      border_color: "#18072d"
 
   components_right:
-  - type: "cpu"
-    margin: "0 4px"
-    label: "<attr fs='24' fg='#87a1ff'></attr><attr fs='24' fg='#36416c'>˷</attr><attr fg='#6c81cd'>{percent_usage}%</attr>"
-    refresh_interval_ms: 1000
-  - type: "memory"
-    margin: "0 4px"
-    border_width: "0px 0px 0px 0"
-    border_color: "#fffbca"
-    label: "<attr fs='24' fg='#f3c977'></attr><attr fs='24' fg='#746038'>˷</attr><attr fg='#ddb66a'>{percent_usage}%</attr>"
-    refresh_interval_ms: 1000
-  - type: "gpu"
-    margin: "0 4px"
-    border_width: "0px 0 0px 0"
-    border_color: "#563fb1"
-    label: "<attr fs='24' fg='#cd0b0b'></attr><attr fs='24' fg='#574141'>˷</attr><attr fg='#ed9696'>{percent_usage}% </attr><attr fs='12' fg='#4bc383'>⦙ </attr>"
-    refresh_interval_ms: 1000
-  - type: "weather"
-    margin: "0 4px"
-    label: "{temperature_celsius}°C"
-    longitude: "6.953101"
-    latitude: "50.935173"
-    label_sun: "<attr fg='#f9d71c'>{temperature_celsius}°C</attr>"
-    label_moon: "<attr fg='#efefef'>{temperature_celsius}°C</attr>"
-    label_cloud_moon: "<attr fg='#d4d1d1'>🌙{temperature_celsius}°C</attr>"
-    label_cloud_sun: "<attr fg='#dfc42b'>{temperature_celsius}°C</attr>"
-    label_cloud_moon_rain: "<attr fg='#b3b3b3'>🌙{temperature_celsius}°C</attr>"
-    label_cloud_sun_rain: "<attr fg='#decb60'>{temperature_celsius}°C</attr>"
-    label_cloud_rain: "<attr fg='#959595'>{temperature_celsius}°C</attr>"
-    label_snow_flake: "<attr fg='#ffffff'>{temperature_celsius}°C</attr>"
-    label_thunderstorm: "<attr fg='#f74c4c'>{temperature_celsius}°C</attr>"
-    label_cloud: "<attr fg='#b8abab'>{temperature_celsius}°C</attr>"
-  - type: "clock"
-    margin: "0 2px 0 4px"
-    foreground: "#b4d2ff"
-    time_formatting: "⦙  dddd, dd/MM/yyyy (ww) ⦙  HH:mm"
+    - type: "cpu"
+      margin: "0 4px"
+      label: "<attr fs='24' fg='#87a1ff'></attr><attr fs='24' fg='#36416c'>˷</attr><attr fg='#6c81cd'>{percent_usage}%</attr>"
+      refresh_interval_ms: 1000
+    - type: "memory"
+      margin: "0 4px"
+      border_width: "0px 0px 0px 0"
+      border_color: "#fffbca"
+      label: "<attr fs='24' fg='#f3c977'></attr><attr fs='24' fg='#746038'>˷</attr><attr fg='#ddb66a'>{percent_usage}%</attr>"
+      refresh_interval_ms: 1000
+    - type: "gpu"
+      margin: "0 4px"
+      border_width: "0px 0 0px 0"
+      border_color: "#563fb1"
+      label: "<attr fs='24' fg='#cd0b0b'></attr><attr fs='24' fg='#574141'>˷</attr><attr fg='#ed9696'>{percent_usage}% </attr><attr fs='12' fg='#4bc383'>⦙ </attr>"
+      refresh_interval_ms: 1000
+    - type: "weather"
+      margin: "0 4px"
+      label: "{temperature_celsius}°C"
+      longitude: "6.953101"
+      latitude: "50.935173"
+      label_sun: "<attr fg='#f9d71c'>{temperature_celsius}°C</attr>"
+      label_moon: "<attr fg='#efefef'>{temperature_celsius}°C</attr>"
+      label_cloud_moon: "<attr fg='#d4d1d1'>🌙{temperature_celsius}°C</attr>"
+      label_cloud_sun: "<attr fg='#dfc42b'>{temperature_celsius}°C</attr>"
+      label_cloud_moon_rain: "<attr fg='#b3b3b3'>🌙{temperature_celsius}°C</attr>"
+      label_cloud_sun_rain: "<attr fg='#decb60'>{temperature_celsius}°C</attr>"
+      label_cloud_rain: "<attr fg='#959595'>{temperature_celsius}°C</attr>"
+      label_snow_flake: "<attr fg='#ffffff'>{temperature_celsius}°C</attr>"
+      label_thunderstorm: "<attr fg='#f74c4c'>{temperature_celsius}°C</attr>"
+      label_cloud: "<attr fg='#b8abab'>{temperature_celsius}°C</attr>"
+    - type: "clock"
+      margin: "0 2px 0 4px"
+      foreground: "#b4d2ff"
+      time_formatting: "⦙  dddd, dd/MM/yyyy (ww) ⦙  HH:mm"
 
 workspaces:
+  # 1) Main Worskpace (Firefox)
+  - name: "1"
+    display_name: "⦙¹"
+    keep_alive: true
 
-# 1) Main Worskpace (Firefox)
-- name: "1"
-  display_name: "⦙¹"
-  keep_alive: true
+  # 2) Second Worskpace (Thorium)
+  - name: "2"
+    display_name: "²\U000F1887"
 
-# 2) Second Worskpace (Thorium)
-- name: "2"
-  display_name: "²\U000F1887"
+  # 3) Notes and Thoughts Workspace (Obsidian)
+  - name: "3"
+    display_name: "³\U000F1781"
 
-# 3) Notes and Thoughts Workspace (Obsidian)
-- name: "3"
-  display_name: "³\U000F1781"
+  # 4) Visual Studio Code Workspace (Visual Studio Code)
+  - name: "4"
+    display_name: "⁴\U000F0A1E"
 
-# 4) Visual Studio Code Workspace (Visual Studio Code)
-- name: "4"
-  display_name: "⁴\U000F0A1E"
+  # 5) Terminal Workspace (Windows Terminal)
+  - name: "5"
+    display_name: "⁵"
 
-# 5) Terminal Workspace (Windows Terminal)
-- name: "5"
-  display_name: "⁵"
+  # 6) Server Workspace (mobaXterm, wsl, etc.)
+  - name: "6"
+    display_name: "⁶"
 
-# 6) Server Workspace (mobaXterm, wsl, etc.)
-- name: "6"
-  display_name: "⁶"
+  # 7) unknown workspace
+  - name: "7"
+    display_name: "⁷"
 
-# 7) unknown workspace
-- name: "7"
-  display_name: "⁷"
+  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
+  - name: "8"
+    display_name: "⁸"
 
-# 8) Art and Design Workspace (GIMP, Krita, Inkscape)
-- name: "8"
-  display_name: "⁸"
+  # unknown workspace
+  - name: "9"
+    display_name: "⁹TT"
 
-# unknown workspace
-- name: "9"
-  display_name: "⁹TT"
+  # 0) Gaming Workspace (Steam)
+  - name: "0"
+    display_name: "⦙ ⁰"
 
-# 0) Gaming Workspace (Steam)
-- name: "0"
-  display_name: "⦙ ⁰"
+  # T) Email (Thunderbird)
+  - name: "10"
+    display_name: "⦙ ᵗ"
 
-# T) Email (Thunderbird)
-- name: "10"
-  display_name: "⦙ ᵗ"
+  # S) Productivity (Super Productivity)
+  - name: "11"
+    display_name: "ˢ\U000F0E1E"
 
-# S) Productivity (Super Productivity)
-- name: "11"
-  display_name: "ˢ\U000F0E1E"
+  # C) Communication (Telegram, Signal, Discord)
+  - name: "12"
+    display_name: "ᶜ"
 
-# C) Communication (Telegram, Signal, Discord)
-- name: "12"
-  display_name: "ᶜ"
+  # M) Music (Spotify, MusicBee, foobar2000)
+  - name: "13"
+    display_name: "⦙ ᵐ"
 
-# M) Music (Spotify, MusicBee, foobar2000)
-- name: "13"
-  display_name: "⦙ ᵐ"
+  # F) Android Mobile Phone Workspace (Samsung Flow)
+  - name: "15"
+    display_name: "⦙ ᶠ"
 
-# F) Android Mobile Phone Workspace (Samsung Flow)
-- name: "15"
-  display_name: "⦙ ᶠ"
+  # N) Laptop Workspace (mobaXterm, wsl, etc.)
+  - name: "14"
+    display_name: "⦙ ᶰ"
 
-# N) Laptop Workspace (mobaXterm, wsl, etc.)
-- name: "14"
-  display_name: "⦙ ᶰ"
-
-# A) Ableton Workspace (DAW)
-- name: "16"
-  display_name: "ᵃ\U000F08F1⦙"
+  # A) Ableton Workspace (DAW)
+  - name: "16"
+    display_name: "ᵃ\U000F08F1⦙"
 
 window_rules:
-# Visual Studio Code Workspace (Visual Studio Code)
-- command: "move to workspace 0"
-  match_process_name: "/Steam|steamwebhelper/"
-
-- command: "move to workspace 1"
   # Main Workspace (Firefox)
-  match_process_name: "/firefox/"
+  - command: "move to workspace 1"
+    match_process_name: "/firefox/"
 
-- command: "move to workspace 2"
-  # Second Workspace (Thorium)
-  match_process_name: "/thorium/"
+  - command: "move to workspace 2"
+    # Second Workspace (Thorium)
+    match_process_name: "/thorium/"
 
-- command: "move to workspace 3"
-  # Notes and Thoughts Workspace (Obsidian)
-  match_process_name: "/Obsidian/"
+  - command: "move to workspace 3"
+    # Notes and Thoughts Workspace (Obsidian)
+    match_process_name: "/Obsidian/"
 
-- command: "move to workspace 4"
-  # Visual Studio Code Workspace (Visual Studio Code)
-  match_process_name: "/Visual Studio Code|Code/"
+  - command: "move to workspace 4"
+    # Visual Studio Code Workspace (Visual Studio Code)
+    match_process_name: "/Visual Studio Code|Code/"
 
-- command: "move to workspace 5"
-  # Terminal Workspace (Windows Terminal)
-  match_process_name: "/Windows Terminal/"
+  - command: "move to workspace 5"
+    # Terminal Workspace (Windows Terminal)
+    match_process_name: "/Windows Terminal/"
 
-- command: "move to workspace 6"
-  # Server Workspace (mobaXterm, wsl, etc.)
-  match_process_name: "/mobaXterm|wsl/"
+  - command: "move to workspace 6"
+    # Server Workspace (mobaXterm, wsl, etc.)
+    match_process_name: "/mobaXterm|wsl/"
 
-- command: "move to workspace 7"
-  # Unknown Workspace
-  match_process_name: "/unknown/"
+  - command: "move to workspace 7"
+    # Unknown Workspace
+    match_process_name: "/unknown/"
 
-- command: "move to workspace 8"
-  # Art and Design Workspace (GIMP, Krita, Inkscape)
-  match_process_name: "/GIMP|Krita|Inkscape/"
+  - command: "move to workspace 8"
+    # Art and Design Workspace (GIMP, Krita, Inkscape)
+    match_process_name: "/GIMP|Krita|Inkscape/"
 
-- command: "move to workspace 9"
-  # Unknown Workspace
-  match_process_name: "/unknown/"
+  - command: "move to workspace 9"
+    # Unknown Workspace
+    match_process_name: "/unknown/"
 
-- command: "move to workspace 10"
-  # Email (Thunderbird)
-  match_process_name: "thunderbird"
-- command: "move to workspace 11"
-  # Productivity (Super Productivity)
-  match_process_name: "/superProductivity/"
-- command: "move to workspace 12"
-  # Communication (Telegram, Signal, Discord)
-  match_process_name: "/Telegram|64gram|Signal|Discord/"
-- command: "move to workspace 13"
-  # Music (Spotify, MusicBee, foobar2000)
-  match_process_name: "/Spotify|MusicBee|foobar2000/"
-  match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
-- command: "move to workspace 14"
-  # Laptop Workspace (mobaXterm, wsl, etc.)
-  match_process_name: "/mobaXterm|wsl/"
-- command: "move to workspace 15"
-  # Android Mobile Phone Workspace (Samsung Flow)
-  match_process_name: "/SamsungFlow/"
-- command: "move to workspace 16"
-  # Ableton Workspace (DAW)
-  match_process_name: "/Ableton/"
+  # Steam Workspace (Gaming)
+  - command: "move to workspace 0"
+    match_process_name: "/Steam|steamwebhelper/"
 
-- command: "ignore"
-  match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
-- command: "ignore"
-  match_title: "[Pp]icture.in.[Pp]icture"
-  match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
-- command: "ignore"
-  match_process_name: "RustClient"
-- command: "ignore"
-  match_process_name: "qalculate-qt"
-- command: "set floating"
-  match_class_name: "#32770"
-- command: "ignore"
-  match_process_name: "wiztree"
-- command: "resize borders 0px -7px -7px -7px"
-  match_process_name: "/steam|steamwebhelper/"
-- command: "resize borders 0px 0px 0px 3px"
-  match_process_name: "/thorium/"
-- command: "set width 25%"
-  match_process_name: "thorium"
-  match_title: "/ChatGPT/"
-- command: "set width 605px"
-  match_process_name: "superProductivity"
-  match_title: "/Super Productivity/"
-- command: "set width 20%"
-  match_process_name: "SamsungFlow"
-  match_title: "/Samsung Flow|SamsungFlowDesktop/"
-- command: "ignore"
-  match_process_name: "mmc"
+  - command: "move to workspace 10"
+    # Email (Thunderbird)
+    match_process_name: "thunderbird"
+  - command: "move to workspace 11"
+    # Productivity (Super Productivity)
+    match_process_name: "/superProductivity/"
+  - command: "move to workspace 12"
+    # Communication (Telegram, Signal, Discord)
+    match_process_name: "/Telegram|64gram|Signal|Discord/"
+  - command: "move to workspace 13"
+    # Music (Spotify, MusicBee, foobar2000)
+    match_process_name: "/Spotify|MusicBee|foobar2000/"
+    match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
+  - command: "move to workspace 14"
+    # Laptop Workspace (mobaXterm, wsl, etc.)
+    match_process_name: "/mobaXterm|wsl/"
+  - command: "move to workspace 15"
+    # Android Mobile Phone Workspace (Samsung Flow)
+    match_process_name: "/SamsungFlow/"
+  - command: "move to workspace 16"
+    # Ableton Workspace (DAW)
+    match_process_name: "/Ableton/"
+
+  - command: "ignore"
+    match_process_name: "/Taskmgr|ScreenClippingHost/Flow.Launcher/"
+  - command: "ignore"
+    match_title: "[Pp]icture.in.[Pp]icture"
+    match_class_name: "Chrome_WidgetWin_1|MozillaDialogClass"
+  - command: "ignore"
+    match_process_name: "RustClient"
+  - command: "ignore"
+    match_process_name: "qalculate-qt"
+  - command: "set floating"
+    match_class_name: "#32770"
+  - command: "ignore"
+    match_process_name: "wiztree"
+  - command: "resize borders 0px -7px -7px -7px"
+    match_process_name: "/steam|steamwebhelper/"
+  - command: "resize borders 0px 0px 0px 3px"
+    match_process_name: "/thorium/"
+  - command: "set width 25%"
+    match_process_name: "thorium"
+    match_title: "/ChatGPT/"
+  - command: "set width 605px"
+    match_process_name: "superProductivity"
+    match_title: "/Super Productivity/"
+  - command: "set width 20%"
+    match_process_name: "SamsungFlow"
+    match_title: "/Samsung Flow|SamsungFlowDesktop/"
+  - command: "ignore"
+    match_process_name: "mmc"
 
 binding_modes:
-- name: "resize"
-  keybindings:
-  - command: "resize width -2%"
-    bindings: ["H", "Left"]
-  - command: "resize width +2%"
-    bindings: ["L", "Right"]
-  - command: "resize height +2%"
-    bindings: ["K", "Up"]
-  - command: "resize height -2%"
-    bindings: ["J", "Down"]
-  - command: "binding mode none"
-    bindings: ["Escape", "Enter"]
+  - name: "resize"
+    keybindings:
+      - command: "resize width -2%"
+        bindings: ["H", "Left"]
+      - command: "resize width +2%"
+        bindings: ["L", "Right"]
+      - command: "resize height +2%"
+        bindings: ["K", "Up"]
+      - command: "resize height -2%"
+        bindings: ["J", "Down"]
+      - command: "binding mode none"
+        bindings: ["Escape", "Enter"]
 
 keybindings:
-- command: "exec wt"
-  binding: "Alt+Enter"
-- command: "exec 'C:\\Program Files\\Git\\git-bash.exe'"
-  binding: "Alt+B"
-- command: "focus workspace recent"
-  binding: "Alt+R"
-- command: "focus left"
-  bindings: ["Alt+H", "Alt+Left"]
-- command: "focus right"
-  bindings: ["Alt+L", "Alt+Right"]
-- command: "focus up"
-  bindings: ["Alt+K", "Alt+Up"]
-- command: "focus down"
-  bindings: ["Alt+J", "Alt+Down"]
-- command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
-  bindings: ["Alt+OemPipe"]
-- command: "tiling direction toggle"
-  binding: "Alt+V"
-- command: "focus mode toggle"
-  binding: "Alt+Space"
-- command: "toggle floating"
-  binding: "Alt+Shift+Space"
-- command: "toggle maximized"
-  binding: "Alt+X"
-- command: "set minimized"
-  binding: "Alt+Z"
-- command: "close"
-  binding: "Alt+Q"
-- command: "exit wm"
-  binding: "Alt+Shift+E"
-- command: "reload config"
-  binding: "Alt+Shift+R"
-- command: "resize width -2%"
-  binding: "Alt+U"
-- command: "resize width +2%"
-  binding: "Alt+P"
-- command: "resize height +2%"
-  binding: "Alt+O"
-- command: "resize height -2%"
-  binding: "Alt+I"
-- command: "move left"
-  bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
-- command: "move right"
-  bindings: ["Alt+Shift+F", "Alt+Shift+Right"]
-- command: "move up"
-  bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
-- command: "move down"
-  bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
+  - command: "exec wt"
+    binding: "Alt+Enter"
+  - command: "exec 'C:\\Program Files\\Git\\git-bash.exe'"
+    binding: "Alt+B"
+  - command: "focus workspace recent"
+    binding: "Alt+R"
+  - command: "focus left"
+    bindings: ["Alt+H", "Alt+Left"]
+  - command: "focus right"
+    bindings: ["Alt+L", "Alt+Right"]
+  - command: "focus up"
+    bindings: ["Alt+K", "Alt+Up"]
+  - command: "focus down"
+    bindings: ["Alt+J", "Alt+Down"]
+  - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
+    bindings: ["Alt+OemPipe"]
+  - command: "tiling direction toggle"
+    binding: "Alt+V"
+  - command: "focus mode toggle"
+    binding: "Alt+Space"
+  - command: "toggle floating"
+    binding: "Alt+Shift+Space"
+  - command: "toggle maximized"
+    binding: "Alt+X"
+  - command: "set minimized"
+    binding: "Alt+Z"
+  - command: "close"
+    binding: "Alt+Q"
+  - command: "exit wm"
+    binding: "Alt+Shift+E"
+  - command: "reload config"
+    binding: "Alt+Shift+R"
+  - command: "resize width -2%"
+    binding: "Alt+U"
+  - command: "resize width +2%"
+    binding: "Alt+P"
+  - command: "resize height +2%"
+    binding: "Alt+O"
+  - command: "resize height -2%"
+    binding: "Alt+I"
+  - command: "move left"
+    bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
+  - command: "move right"
+    bindings: ["Alt+Shift+F", "Alt+Shift+Right"]
+  - command: "move up"
+    bindings: ["Alt+Shift+K", "Alt+Shift+Up"]
+  - command: "move down"
+    bindings: ["Alt+Shift+J", "Alt+Shift+Down"]
 
-- command: "focus workspace 1"
-  # 1) Main Workspace (Firefox)
-  binding: "Alt+1"
-- command: "focus workspace 2"
-  # 2) Second Workspace (Thorium)
-  binding: "Alt+2"
-- command: "focus workspace 3"
-  # 3) Notes and Thoughts Workspace (Obsidian)
-  binding: "Alt+3"
-- command: "focus workspace 4"
-  # 4) Visual Studio Code Workspace (Visual Studio Code)
-  binding: "Alt+4"
-- command: "focus workspace 5"
-  # 5) Terminal Workspace (Windows Terminal)
-  binding: "Alt+5"
-- command: "focus workspace 6"
-  # 6) Server Workspace (mobaXterm, wsl, etc.)
-  binding: "Alt+6"
-- command: "focus workspace 7"
-  # 7) unknown workspace
-  binding: "Alt+7"
-- command: "focus workspace 8"
-  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
-  binding: "Alt+8"
-- command: "focus workspace 9"
-  # 9) unknown workspace
-  binding: "Alt+9"
-- command: "focus workspace 0"
-  # 0) Gaming Workspace (Steam)
-  binding: "Alt+0"
-- command: "focus workspace 10"
-  # 10) Email (Thunderbird)
-  binding: "Alt+T"
-- command: "focus workspace 11"
-  # 11) Productivity (Super Productivity)
-  binding: "Alt+S"
-- command: "focus workspace 12"
-  # 12) Communication (Telegram, Signal, Discord)
-  binding: "Alt+C"
-- command: "focus workspace 13"
-  # 13) Music (Spotify, MusicBee, foobar2000)
-  binding: "Alt+M"
-- command: "focus workspace 14"
-  # 14) Android Workspace (Samsung Flow)
-  binding: "Alt+F"
-- command: "focus workspace 15"
-  # 15) Laptop Workspace (mobaXterm, wsl, etc.)
-  binding: "Alt+N"
-- command: "focus workspace 16"
-  # 16) Ableton Workspace (DAW)
-  binding: "Alt+A"
+  - command: "focus workspace 1"
+    # 1) Main Workspace (Firefox)
+    binding: "Alt+1"
+  - command: "focus workspace 2"
+    # 2) Second Workspace (Thorium)
+    binding: "Alt+2"
+  - command: "focus workspace 3"
+    # 3) Notes and Thoughts Workspace (Obsidian)
+    binding: "Alt+3"
+  - command: "focus workspace 4"
+    # 4) Visual Studio Code Workspace (Visual Studio Code)
+    binding: "Alt+4"
+  - command: "focus workspace 5"
+    # 5) Terminal Workspace (Windows Terminal)
+    binding: "Alt+5"
+  - command: "focus workspace 6"
+    # 6) Server Workspace (mobaXterm, wsl, etc.)
+    binding: "Alt+6"
+  - command: "focus workspace 7"
+    # 7) unknown workspace
+    binding: "Alt+7"
+  - command: "focus workspace 8"
+    # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
+    binding: "Alt+8"
+  - command: "focus workspace 9"
+    # 9) unknown workspace
+    binding: "Alt+9"
+  - command: "focus workspace 0"
+    # 0) Gaming Workspace (Steam)
+    binding: "Alt+0"
+  - command: "focus workspace 10"
+    # 10) Email (Thunderbird)
+    binding: "Alt+T"
+  - command: "focus workspace 11"
+    # 11) Productivity (Super Productivity)
+    binding: "Alt+S"
+  - command: "focus workspace 12"
+    # 12) Communication (Telegram, Signal, Discord)
+    binding: "Alt+C"
+  - command: "focus workspace 13"
+    # 13) Music (Spotify, MusicBee, foobar2000)
+    binding: "Alt+M"
+  - command: "focus workspace 14"
+    # 14) Android Workspace (Samsung Flow)
+    binding: "Alt+F"
+  - command: "focus workspace 15"
+    # 15) Laptop Workspace (mobaXterm, wsl, etc.)
+    binding: "Alt+N"
+  - command: "focus workspace 16"
+    # 16) Ableton Workspace (DAW)
+    binding: "Alt+A"
 
-- commands: ["move to workspace 1", "focus workspace 1"]
-  # Main Workspace (Firefox)
-  binding: "Alt+Shift+1"
-- commands: ["move to workspace 2", "focus workspace 2"]
-  # Second Workspace (Thorium)
-  binding: "Alt+Shift+2"
-- commands: ["move to workspace 3", "focus workspace 3"]
-  # Notes and Thoughts Workspace (Obsidian)
-  binding: "Alt+Shift+3"
-- commands: ["move to workspace 4", "focus workspace 4"]
-  # Visual Studio Code Workspace (Visual Studio Code)
-  binding: "Alt+Shift+4"
-- commands: ["move to workspace 5", "focus workspace 5"]
-  # Terminal Workspace (Windows Terminal)
-  binding: "Alt+Shift+5"
-- commands: ["move to workspace 6", "focus workspace 6"]
-  # Server Workspace (mobaXterm, wsl, etc.)
-  binding: "Alt+Shift+6"
-- commands: ["move to workspace 7", "focus workspace 7"]
-  # unknown workspace
-  binding: "Alt+Shift+7"
-- commands: ["move to workspace 8", "focus workspace 8"]
-  # Art and Design Workspace (GIMP, Krita, Inkscape)
-  binding: "Alt+Shift+8"
-- commands: ["move to workspace 9", "focus workspace 9"]
-  # unknown workspace
-  binding: "Alt+Shift+9"
-- commands: ["move to workspace 0", "focus workspace 0"]
-  # Gaming Workspace (Steam)
-  binding: "Alt+Shift+0"
-- commands: ["move to workspace 10", "focus workspace 10"]
-  # Email (Thunderbird)
-  binding: "Alt+Shift+T"
-- commands: ["move to workspace 11", "focus workspace 11"]
-  # Productivity (Super Productivity)
-  binding: "Alt+Shift+S"
-- commands: ["move to workspace 12", "focus workspace 12"]
-  # Communication (Telegram, Signal, Discord)
-  binding: "Alt+Shift+C"
-- commands: ["move to workspace 13", "focus workspace 13"]
-  # Music (Spotify, MusicBee, foobar2000)
-  binding: "Alt+Shift+M"
-- commands: ["move to workspace 14", "focus workspace 14"]
-  # Laptop Workspace (mobaXterm, wsl, etc.)
-  binding: "Alt+Shift+N"
-- commands: ["move to workspace 15", "focus workspace 15"]
-  # Android Mobile Phone Workspace (Samsung Flow)
-  binding: "Alt+Shift+F"
-- commands: ["move to workspace 16", "focus workspace 16"]
-  # Ableton Workspace (DAW)
-  binding: "Alt+Shift+A"
+  - commands: ["move to workspace 1", "focus workspace 1"]
+    # Main Workspace (Firefox)
+    binding: "Alt+Shift+1"
+  - commands: ["move to workspace 2", "focus workspace 2"]
+    # Second Workspace (Thorium)
+    binding: "Alt+Shift+2"
+  - commands: ["move to workspace 3", "focus workspace 3"]
+    # Notes and Thoughts Workspace (Obsidian)
+    binding: "Alt+Shift+3"
+  - commands: ["move to workspace 4", "focus workspace 4"]
+    # Visual Studio Code Workspace (Visual Studio Code)
+    binding: "Alt+Shift+4"
+  - commands: ["move to workspace 5", "focus workspace 5"]
+    # Terminal Workspace (Windows Terminal)
+    binding: "Alt+Shift+5"
+  - commands: ["move to workspace 6", "focus workspace 6"]
+    # Server Workspace (mobaXterm, wsl, etc.)
+    binding: "Alt+Shift+6"
+  - commands: ["move to workspace 7", "focus workspace 7"]
+    # unknown workspace
+    binding: "Alt+Shift+7"
+  - commands: ["move to workspace 8", "focus workspace 8"]
+    # Art and Design Workspace (GIMP, Krita, Inkscape)
+    binding: "Alt+Shift+8"
+  - commands: ["move to workspace 9", "focus workspace 9"]
+    # unknown workspace
+    binding: "Alt+Shift+9"
+  - commands: ["move to workspace 0", "focus workspace 0"]
+    # Gaming Workspace (Steam)
+    binding: "Alt+Shift+0"
+  - commands: ["move to workspace 10", "focus workspace 10"]
+    # Email (Thunderbird)
+    binding: "Alt+Shift+T"
+  - commands: ["move to workspace 11", "focus workspace 11"]
+    # Productivity (Super Productivity)
+    binding: "Alt+Shift+S"
+  - commands: ["move to workspace 12", "focus workspace 12"]
+    # Communication (Telegram, Signal, Discord)
+    binding: "Alt+Shift+C"
+  - commands: ["move to workspace 13", "focus workspace 13"]
+    # Music (Spotify, MusicBee, foobar2000)
+    binding: "Alt+Shift+M"
+  - commands: ["move to workspace 14", "focus workspace 14"]
+    # Laptop Workspace (mobaXterm, wsl, etc.)
+    binding: "Alt+Shift+N"
+  - commands: ["move to workspace 15", "focus workspace 15"]
+    # Android Mobile Phone Workspace (Samsung Flow)
+    binding: "Alt+Shift+F"
+  - commands: ["move to workspace 16", "focus workspace 16"]
+    # Ableton Workspace (DAW)
+    binding: "Alt+Shift+A"
