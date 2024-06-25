@@ -176,7 +176,7 @@ workspaces:
     display_name: "⦙ᵐ⦙"
   # Android Mobile Phone Workspace (Samsung Flow)
   - name: "14"
-    display_name: "ᶠ"
+    display_name: "ᵃ"
   # Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "15"
     display_name: "ᶰ⦙"
@@ -386,13 +386,13 @@ keybindings:
     binding: "Alt+M"
   # Android Workspace (Samsung Flow)
   - command: "focus workspace 14"
-    binding: "Alt+F"
+    binding: "Alt+A"
   # Laptop Workspace (mobaXterm, wsl, etc.)
   - command: "focus workspace 15"
     binding: "Alt+N"
-  # Ableton Workspace (DAW)
-  - command: "focus workspace 16"
-    binding: "Alt+A"
+  # # Ableton Workspace (DAW)
+  # - command: "focus workspace 16"
+  #   binding: "Alt+A"
 
   # Main Workspace (Firefox)
   - commands: ["move to workspace 1", "focus workspace 1"]
@@ -436,12 +436,12 @@ keybindings:
   # Music (Spotify, MusicBee, foobar2000)
   - commands: ["move to workspace 13", "focus workspace 13"]
     binding: "Alt+Shift+M"
-  # Laptop Workspace (mobaXterm, wsl, etc.)
-  - commands: ["move to workspace 14", "focus workspace 14"]
-    binding: "Alt+Shift+N"
   # Android Mobile Phone Workspace (Samsung Flow)
-  - commands: ["move to workspace 15", "focus workspace 15"]
-    binding: "Alt+Shift+F"
-  # Ableton Workspace (DAW)
-  - commands: ["move to workspace 16", "focus workspace 16"]
+  - commands: ["move to workspace 14", "focus workspace 14"]
     binding: "Alt+Shift+A"
+  # Laptop Workspace (mobaXterm, wsl, etc.)
+  - commands: ["move to workspace 15", "focus workspace 15"]
+    binding: "Alt+Shift+N"
+  # # Ableton Workspace (DAW)
+  # - commands: ["move to workspace 16", "focus workspace 16"]
+  #   binding: "Alt+Shift+A"
