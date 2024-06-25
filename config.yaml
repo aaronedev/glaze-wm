@@ -135,53 +135,53 @@ bar:
 workspaces:
 # 1) Main Worskpace (Firefox)
   - name: "1"
-    display_name: "⦙ ¹◌"
+    display_name: "⦙ ¹"
     keep_alive: true
 # 2) Second Worskpace (Thorium)
   - name: "2"
-    display_name: "²\U000F1887◌"
+    display_name: "²\U000F1887"
 # 3) Notes and Thoughts Workspace (Obsidian)
   - name: "3"
-    display_name: "³\U000F1781◌"
+    display_name: "³\U000F1781"
 # 4) Visual Studio Code Workspace (Visual Studio Code)
   - name: "4"
-    display_name: "⁴\U000F0A1E◌"
+    display_name: "⁴\U000F0A1E"
 # 5) Terminal Workspace (Windows Terminal)
   - name: "5"
-    display_name: "⁵◌"
+    display_name: "⁵"
 # 6) Server Workspace (mobaXterm, wsl, etc.)
   - name: "6"
-    display_name: "⁶◌"
+    display_name: "⁶"
 # 7) unknown workspace
   - name: "7"
-    display_name: "⁷◌"
+    display_name: "⁷"
 # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
   - name: "8"
-    display_name: "⁸◌"
+    display_name: "⁸"
 # 9) Gaming Workspace (Steam)
   - name: "9"
-    display_name: "⁹\U000F1460◌"
+    display_name: "⁹\U000F1460"
 # 0) unknown workspace
   - name: "0"
-    display_name: "⦙ ⁰◌"
+    display_name: "⦙ ⁰"
 # T) Email (Thunderbird)
   - name: "10"
-    display_name: "⦙ ᵗ◌"
+    display_name: "⦙ ᵗ"
 # S) Productivity (Super Productivity)
   - name: "11"
-    display_name: "ˢ\U000F0E1E◌"
+    display_name: "ˢ\U000F0E1E"
 # C) Communication (Telegram, Signal, Discord)
   - name: "12"
-    display_name: "ᶜ◌"
+    display_name: "ᶜ"
 # M) Music (Spotify, MusicBee, foobar2000)
   - name: "13"
-    display_name: "⦙ ᵐ◌"
+    display_name: "⦙ ᵐ"
 # A) Android Mobile Phone Workspace (Samsung Flow)
   - name: "14"
-    display_name: "⦙ ᵃ󰥑◌"
+    display_name: "⦙ ᵃ󰥑 ⦙"
 # L) Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "15"
-    display_name: "⦙ ᶫ󰢹◌"
+    display_name: "⦙ ᶫ󰢹 ⦙"
   - name: "16"
 # D) Ableton Workspace
     display_name: "ᵃ\U000F0F69󰣱 ⦙"
