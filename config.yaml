@@ -4,7 +4,7 @@ general:
   toggle_workspace_on_refocus: true
   show_floating_on_top: true
   floating_window_move_amount: "5%"
-  center_new_floating_windows: true
+  center_new_floating_windows: false
   window_animations: "false"
 
 gaps:
@@ -24,7 +24,7 @@ bar:
   opacity: 0.85
   height: "33px"
   font_family: "RobotoMono Nerd Font Mono"
-  font_size: "14px"
+  font_size: "13px"
   font_weight: "800"
   border_radius: "10px"
   border_width: "2px"
@@ -173,10 +173,10 @@ workspaces:
     display_name: "ᶜ"
   # Music (Spotify, MusicBee, foobar2000)
   - name: "13"
-    display_name: "⦙ ᵐ⦙"
+    display_name: "⦙ᵐ⦙"
   # Android Mobile Phone Workspace (Samsung Flow)
   - name: "14"
-    display_name: "ᶠ"
+    display_name: "ᶠ"
   # Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "15"
     display_name: "ᶰ⦙"
@@ -233,7 +233,7 @@ window_rules:
     match_process_name: "/mobaXterm|wsl/"
   # Android Mobile Phone Workspace (Samsung Flow)
   - command: "move to workspace 15"
-    match_process_name: "/SamsungFlow/"
+    match_process_name: "/samsungflow|SamsungFlowDesktop"
   # Ableton Workspace (DAW)
   - command: "move to workspace 16"
     match_process_name: "/Ableton/"
