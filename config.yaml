@@ -21,10 +21,10 @@ focus_borders:
 
 bar:
   enabled: true
-  opacity: 0.85
-  height: "33px"
+  opacity: 0.95
+  height: "32px"
   font_family: "RobotoMono Nerd Font Mono"
-  font_size: "13px"
+  font_size: "14px"
   font_weight: "800"
   border_radius: "10px"
   border_width: "2px"
@@ -35,23 +35,23 @@ bar:
 
   components_left:
     - type: "system tray"
-      label_expand_text: "<attr fs='18' fg='#5a97c3'>៚</attr>"
-      label_collapse_text: "<attr fs='18' fg='#5a97c3'>៙</attr>"
+      label_expand_text: "<attr fs='22' fg='#5a97c3'>៚</attr>"
+      label_collapse_text: "<attr fs='22' fg='#5a97c3'>៙</attr>"
       margin: "2px 4px 2px 4px"
       padding: "4px 2px 4px 2px"
       border_radius: "3px"
 
   components_center:
     - type: "tiling direction"
-      foreground: "#e18dff"
+      foreground: "#ebb0ff"
       label_horizontal: "\U000F0054"
       label_vertical: "\U000F0045"
-      margin: "0 4px 0 4px"
+      margin: "0 8px 0 4px"
       padding: "4px"
       border_radius: "2px"
       border_width: "2px"
-      font_size: "24px"
-      border_color: "#221949"
+      font_size: "26px"
+      border_color: "#664be1"
     - type: "workspaces"
       font_size: "24px"
       border_color: "#221949"
@@ -78,16 +78,16 @@ bar:
       border_width: "2px"
       border_color: "#153541"
     - type: "volume"
-      label_mute: "<attr fs='24' fg='#8a8aff'></attr><attr fs='24' fg='#3b3b4c'>˷</attr><attr fs='12' fg='#a9a9cc'>{volume_level}%</attr>"
-      label_low: "<attr fs='24' fg='#f46e6e'></attr><attr fs='24' fg='#564040'>˷</attr><attr fs='12' fg='#cfa1a1'>{volume_level}%</attr>"
-      label_medium: "<attr fs='24' fg='#f9ad2c'></attr><attr fs='24' fg='#676051'>˷</attr><attr fs='12' fg='#dbcdb2'>{volume_level}%</attr>"
-      label_high: "<attr fs='24' fg='#9bff9b'></attr><attr fs='24' fg='#516551'>˷</attr><attr fs='12' fg='#add1ad'>{volume_level}%</attr>"
-      margin: "0 4px"
+      label_mute: "<attr fs='26' fg='#8a8aff'></attr><attr fs='26' fg='#3b3b4c'>˷</attr><attr fs='14' fg='#a9a9cc'>{volume_level}%</attr>"
+      label_low: "<attr fs='26' fg='#f46e6e'></attr><attr fs='26' fg='#564040'>˷</attr><attr fs='14' fg='#cfa1a1'>{volume_level}%</attr>"
+      label_medium: "<attr fs='26' fg='#f9ad2c'></attr><attr fs='26' fg='#676051'>˷</attr><attr fs='14' fg='#dbcdb2'>{volume_level}%</attr>"
+      label_high: "<attr fs='26' fg='#9bff9b'></attr><attr fs='26' fg='#516551'>˷</attr><attr fs='14' fg='#add1ad'>{volume_level}%</attr>"
+      margin: "0 8px"
       border_color: "#451481"
     - type: "music"
-      label_not_playing: "<attr fs='13' fg='#75c3b6'>\U000F038A</attr> <attr g='#beece4'> {artist_name}</attr>"
-      label_paused: "<attr fs='13' fg='#c34848'></attr> <attr g='#e2b9b9'> {artist_name}</attr>"
-      label_playing: "<attr fs='13' fg='#93e984'></attr> <attr fg='#ddf6d9'> {artist_name}</attr>"
+      label_not_playing: "<attr fs='14' fg='#75c3b6'>\U000F038A</attr> <attr g='#beece4'> {artist_name}</attr>"
+      label_paused: "<attr fs='14' fg='#c34848'></attr> <attr g='#e2b9b9'> {artist_name}</attr>"
+      label_playing: "<attr fs='14' fg='#93e984'></attr> <attr fg='#ddf6d9'> {artist_name}</attr>"
       max_artist_length: 24
       max_title_length: 20
       margin: "0 4px"
@@ -128,7 +128,7 @@ bar:
     - type: "clock"
       margin: "0 2px 0 4px"
       foreground: "#b4d2ff"
-      time_formatting: "⦙  dddd, dd/MM/yyyy (ww) ⦙  HH:mm"
+      time_formatting: "⦙ dddd, dd/MM/yyyy (ww) ⦙ HH:mm"
 
 workspaces:
   # Main Workspace (Firefox)
@@ -158,13 +158,13 @@ workspaces:
     display_name: "⁸"
   # Unknown workspace
   - name: "9"
-    display_name: "⁹TT"
+    display_name: "⁹"
   # Gaming Workspace (Steam)
   - name: "0"
-    display_name: "⦙ ⁰"
+    display_name: "⁰"
   # Email (Thunderbird)
   - name: "10"
-    display_name: "⦙ ᵗ"
+    display_name: "⦙ᵗ"
   # Productivity (Super Productivity)
   - name: "11"
     display_name: "ˢ\U000F0E1E"
