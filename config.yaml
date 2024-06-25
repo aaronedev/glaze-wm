@@ -173,13 +173,13 @@ workspaces:
     display_name: "ᶜ"
   # Music (Spotify, MusicBee, foobar2000)
   - name: "13"
-    display_name: "⦙ ᵐ"
+    display_name: "⦙ ᵐ⦙"
   # Android Mobile Phone Workspace (Samsung Flow)
-  - name: "15"
-    display_name: "⦙ ᶠ"
-  # Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "14"
-    display_name: "⦙ ᶰ"
+    display_name: "ᶠ"
+  # Laptop Workspace (mobaXterm, wsl, etc.)
+  - name: "15"
+    display_name: "ᶰ⦙"
   # Ableton Workspace (DAW)
   - name: "16"
     display_name: "ᵃ\U000F08F1⦙"
