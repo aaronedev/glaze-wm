@@ -133,7 +133,7 @@ bar:
 workspaces:
   # 1) Main Workspace (Firefox)
   - name: "1"
-    display_name: "⦙¹"
+    display_name: "⦙ ¹"
     keep_alive: true
   # 2) Second Worskpace (Thorium)
   - name: "2"
@@ -173,19 +173,19 @@ workspaces:
     display_name: "ᶜ"
   # M) Music (Spotify, MusicBee, foobar2000)
   - name: "13"
-    display_name: "ᵐ⦙"
+    display_name: "ᵐ ⦙"
   # A) Android Mobile Phone Workspace (Samsung Flow)
   - name: "14"
     display_name: "ᵃ"
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "15"
-    display_name: "ᶰ⦙"
+    display_name: "ᶰ ⦙"
   # none) Ableton Workspace (DAW)
   - name: "16"
-    display_name: "ᵃ\U000F08F1⦙"
+    display_name: "ᵃ\U000F08F1 ⦙"
 
 window_rules:
-   # 1) Main Workspace (Firefox)
+  # 1) Main Workspace (Firefox)
   - command: "move to workspace 1"
     match_process_name: "/firefox/"
   # 2) Second Workspace (Thorium)
@@ -228,12 +228,12 @@ window_rules:
   - command: "move to workspace 13"
     match_process_name: "/Spotify|MusicBee|foobar2000/"
     match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
-  # N) Laptop Workspace (mobaXterm, wsl, etc.)
-  - command: "move to workspace 14"
-    match_process_name: "/mobaXterm|wsl/"
   # A) Android Mobile Phone Workspace (Samsung Flow)
-  - command: "move to workspace 15"
+  - command: "move to workspace 14"
     match_process_name: "/samsungflow|SamsungFlowDesktop"
+  # N) Laptop Workspace (mobaXterm, wsl, etc.)
+  - command: "move to workspace 15"
+    match_process_name: "mobaXterm"
   # none) Ableton Workspace (DAW)
   - command: "move to workspace 16"
     match_process_name: "/Ableton/"
@@ -379,7 +379,7 @@ keybindings:
   - command: "focus workspace 15"
     binding: "Alt+N"
 
-   # 1) Main Workspace (Firefox)
+  # 1) Main Workspace (Firefox)
   - commands: ["move to workspace 1", "focus workspace 1"]
     binding: "Alt+Shift+1"
   # 2) Second Workspace (Thorium)
