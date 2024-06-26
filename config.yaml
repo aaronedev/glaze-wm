@@ -202,10 +202,10 @@ window_rules:
   # 9) Unknown Workspace
   # 0) Gaming Workspace (Steam)
   - command: "move to workspace 0"
-    match_process_name: "steamwebhelper"
+    match_process_name: "/steamwebhelper|ui32/"
   # T) Email (Thunderbird)
   - command: "move to workspace 10"
-    match_process_name: "thunderbird"
+    match_process_name: "/thunderbird/"
   # S) Productivity (Super Productivity)
   - command: "move to workspace 11"
     match_process_name: "/superProductivity/"
@@ -218,10 +218,10 @@ window_rules:
     match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
   # A) Android Mobile Phone Workspace (Samsung Flow)
   - command: "move to workspace 14"
-    match_process_name: "/samsungflow|SamsungFlowDesktop"
+    match_process_name: "/samsungflow|SamsungFlowDesktop|runtimebroker/"
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - command: "move to workspace 15"
-    match_process_name: "mobaXterm"
+    match_process_name: "/mobaXterm/"
   # none) Ableton Workspace (DAW)
   - command: "move to workspace 16"
     match_process_name: "/Ableton/"
