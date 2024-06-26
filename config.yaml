@@ -133,7 +133,7 @@ bar:
 workspaces:
   # 1) Main Workspace (Firefox)
   - name: "1"
-    display_name: "⦙ ¹"
+    display_name: "❘¹"
     keep_alive: true
   # 2) Second Worskpace (Thorium)
   - name: "2"
@@ -147,9 +147,9 @@ workspaces:
   # 5) Terminal Workspace (Windows Terminal)
   - name: "5"
     display_name: "⁵"
-  # 6) Server Workspace (mobaXterm, wsl, etc.)
+  # 6) Server Workspace (mobaXterm, wsl, winscp, etc.)
   - name: "6"
-    display_name: "⁶"
+    display_name: "⁶󰣀"
   # 7) Unknown workspace
   - name: "7"
     display_name: "⁷"
@@ -158,7 +158,7 @@ workspaces:
     display_name: "⁸"
   # 9) Unknown workspace
   - name: "9"
-    display_name: "⁹"
+    display_name: "⁹󱑠"
   # 0) Gaming Workspace (Steam)
   - name: "0"
     display_name: "⁰"
@@ -179,10 +179,10 @@ workspaces:
     display_name: "ᵃ"
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "15"
-    display_name: "ᶰ ⦙"
+    display_name: "ᶰ❘"
   # none) Ableton Workspace (DAW)
   - name: "16"
-    display_name: "ᵃ\U000F08F1 ⦙"
+    display_name: "ᵃ\U000F08F1❘"
 
 window_rules:
   # 1) Main Workspace (Firefox)
