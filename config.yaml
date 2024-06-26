@@ -24,7 +24,7 @@ bar:
   opacity: 0.95
   height: "32px"
   font_family: "RobotoMono Nerd Font Mono"
-  font_size: "14px"
+  font_size: "13px"
   font_weight: "800"
   border_radius: "10px"
   border_width: "1px"
@@ -96,19 +96,19 @@ bar:
   components_right:
     - type: "cpu"
       margin: "0 4px"
-      label: "<attr fs='24' fg='#87a1ff'></attr><attr fs='24' fg='#36416c'>˷</attr><attr fg='#6c81cd'>{percent_usage}%</attr>"
+      label: "<attr fs='22' fg='#87a1ff'></attr><attr fs='22' fg='#36416c'>˷</attr><attr fg='#6c81cd'>{percent_usage}%</attr>"
       refresh_interval_ms: 1000
     - type: "memory"
       margin: "0 4px"
       border_width: "0px 0px 0px 0"
       border_color: "#fffbca"
-      label: "<attr fs='24' fg='#f3c977'></attr><attr fs='24' fg='#746038'>˷</attr><attr fg='#ddb66a'>{percent_usage}%</attr>"
+      label: "<attr fs='22' fg='#f3c977'></attr><attr fs='22' fg='#746038'>˷</attr><attr fg='#ddb66a'>{percent_usage}%</attr>"
       refresh_interval_ms: 1000
     - type: "gpu"
       margin: "0 4px"
       border_width: "0px 0 0px 0"
       border_color: "#563fb1"
-      label: "<attr fs='24' fg='#cd0b0b'></attr><attr fs='24' fg='#574141'>˷</attr><attr fg='#ed9696'>{percent_usage}% </attr><attr fs='12' fg='#4bc383'>⦙ </attr>"
+      label: "<attr fs='22' fg='#cd0b0b'></attr><attr fs='22' fg='#574141'>˷</attr><attr fg='#ed9696'>{percent_usage}% </attr><attr fs='12' fg='#4bc383'>⦙ </attr>"
       refresh_interval_ms: 1000
     - type: "weather"
       margin: "0 4px"
