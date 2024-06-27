@@ -133,7 +133,7 @@ bar:
 workspaces:
   # 1) Main Workspace (Firefox)
   - name: "1"
-    display_name: "❘¹"
+    display_name: "⏽¹"
     keep_alive: true
   # 2) Second Worskpace (Thorium)
   - name: "2"
@@ -159,12 +159,12 @@ workspaces:
   # 9) Unknown workspace
   - name: "9"
     display_name: "⁹󱑠"
-  # 0) Gaming Workspace (Steam)
+  # 0) blank
   - name: "0"
-    display_name: "⁰"
+    display_name: ""
   # T) Email (Thunderbird)
   - name: "10"
-    display_name: "⦙ ᵗ"
+    display_name: "❘ ᵗ"
   # S) Productivity (Super Productivity)
   - name: "11"
     display_name: "ˢ\U000F0E1E"
@@ -173,16 +173,19 @@ workspaces:
     display_name: "ᶜ"
   # M) Music (Spotify, MusicBee, foobar2000)
   - name: "13"
-    display_name: "ᵐ ⦙"
+    display_name: "ᵐ ❘"
+  # G) Gaming Workspace (Steam)
+  - name: "17"
+    display_name: "ᵍ"
   # A) Android Mobile Phone Workspace (Samsung Flow)
   - name: "14"
     display_name: "ᵃ"
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - name: "15"
-    display_name: "ᶰ❘"
+    display_name: "ᶰ⏽"
   # none) Ableton Workspace (DAW)
   - name: "16"
-    display_name: "ᵃ\U000F08F1❘"
+    display_name: "ᵃ\U000F08F1 ❘"
 
 window_rules:
   # 1) Main Workspace (Firefox)
@@ -201,7 +204,7 @@ window_rules:
     match_process_name: "/GIMP|Krita|Inkscape/"
   # 9) Unknown Workspace
   # 0) Gaming Workspace (Steam)
-  - command: "move to workspace 0"
+  - command: "move to workspace 17"
     match_process_name: "/steamwebhelper|ui32/"
   # T) Email (Thunderbird)
   - command: "move to workspace 10"
@@ -351,8 +354,8 @@ keybindings:
   - command: "focus workspace 9"
     binding: "Alt+9"
   # 0) Gaming Workspace (Steam)
-  - command: "focus workspace 0"
-    binding: "Alt+0"
+  - command: "focus workspace 17"
+    binding: "Alt+G"
   # T) Email (Thunderbird)
   - command: "focus workspace 10"
     binding: "Alt+T"
@@ -400,8 +403,8 @@ keybindings:
   - commands: ["move to workspace 9", "focus workspace 9"]
     binding: "Alt+Shift+9"
   # 0) Gaming Workspace (Steam)
-  - commands: ["move to workspace 0", "focus workspace 0"]
-    binding: "Alt+Shift+0"
+  - commands: ["move to workspace 17", "focus workspace 17"]
+    binding: "Alt+Shift+G"
   # T) Email (Thunderbird)
   - commands: ["move to workspace 10", "focus workspace 10"]
     binding: "Alt+Shift+T"
