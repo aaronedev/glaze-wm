@@ -5,7 +5,7 @@
 
 **glazewm config:**
 
-- <https://github.com/aaronedev/glaze-wm>
+- <https://github.com/aaronedev/.glaze-wm>
 
 **wallpaper64 config:**
 
