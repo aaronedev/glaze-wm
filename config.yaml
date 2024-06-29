@@ -231,7 +231,7 @@ window_rules:
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - command: "move to workspace 15"
     match_title: "MobaXterm"
-  # none) Ableton Workspace (DAW)
+  # Ableton Workspace (DAW)
   - command: "move to workspace 16"
     match_process_name: "/Ableton/"
 
@@ -243,17 +243,19 @@ window_rules:
   - command: "ignore"
     match_process_name: "RustClient"
   - command: "ignore"
-    match_process_name: "qalculate-qt"
+    match_process_name: "qalculate-qt|qalculate-gtk|qalculate"
   - command: "set floating"
     match_class_name: "32770"
   - command: "ignore"
     match_process_name: "wiztree"
+  - command: "ignore"
+    match_process_name: "mmc"
+
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "/steam|steamwebhelper/"
   - command: "resize borders 0px 0px 0px 3px"
     match_process_name: "/thorium/"
-  - command: "ignore"
-    match_process_name: "mmc"
+
   - command: "set tiling"
     match_process_name: "Discord|Telegram|Signal"
 
@@ -276,18 +278,10 @@ keybindings:
     binding: "Alt+Enter"
   - command: "exec 'C:\\Program Files\\Git\\git-bash.exe'"
     binding: "Alt+B"
-  - command: "focus workspace recent"
-    binding: "Alt+R"
-  - command: "focus left"
-    bindings: ["Alt+H", "Alt+Left"]
-  - command: "focus right"
-    bindings: ["Alt+L", "Alt+Right"]
-  - command: "focus up"
-    bindings: ["Alt+K", "Alt+Up"]
-  - command: "focus down"
-    bindings: ["Alt+J", "Alt+Down"]
   - command: "exec 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'"
     bindings: ["Alt+OemPipe"]
+  - command: "focus workspace recent"
+    binding: "Alt+R"
 
   - command: "tiling direction toggle"
     binding: "Alt+V"
@@ -295,6 +289,7 @@ keybindings:
     binding: "Alt+Space"
   - command: "toggle floating"
     binding: "Alt+Shift+Space"
+
   - command: "toggle maximized"
     binding: "Alt+X"
   - command: "set minimized"
@@ -315,6 +310,15 @@ keybindings:
     binding: "Alt+O"
   - command: "resize height -2%"
     binding: "Alt+I"
+
+  - command: "focus left"
+    bindings: ["Alt+H", "Alt+Left"]
+  - command: "focus right"
+    bindings: ["Alt+L", "Alt+Right"]
+  - command: "focus up"
+    bindings: ["Alt+K", "Alt+Up"]
+  - command: "focus down"
+    bindings: ["Alt+J", "Alt+Down"]
 
   - command: "move left"
     bindings: ["Alt+Shift+H", "Alt+Shift+Left"]
