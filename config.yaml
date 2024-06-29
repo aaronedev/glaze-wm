@@ -355,9 +355,6 @@ keybindings:
   # 0) Settings and Updates Workspace (Windows Settings, Windows Update)
   - command: "focus workspace 0"
     binding: "Alt+0"
-  # G) Gaming Workspace (Steam)
-  - command: "focus workspace 17"
-    binding: "Alt+G"
   # T) Email (Thunderbird)
   - command: "focus workspace 10"
     binding: "Alt+T"
@@ -376,6 +373,9 @@ keybindings:
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - command: "focus workspace 15"
     binding: "Alt+N"
+  # G) Gaming Workspace (Steam)
+  - command: "focus workspace 17"
+    binding: "Alt+G"
 
   # 1) Main Workspace (Firefox)
   - commands: ["move to workspace 1", "focus workspace 1"]
@@ -407,9 +407,6 @@ keybindings:
   # 0) Settings and Updates Workspace (Windows Settings, Windows Update)
   - commands: ["move to workspace 0", "focus workspace 0"]
     binding: "Alt+Shift+0"
-  # G) Gaming Workspace (Steam)
-  - commands: ["move to workspace 17", "focus workspace 17"]
-    binding: "Alt+Shift+G"
   # T) Email (Thunderbird)
   - commands: ["move to workspace 10", "focus workspace 10"]
     binding: "Alt+Shift+T"
@@ -428,3 +425,6 @@ keybindings:
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - commands: ["move to workspace 15", "focus workspace 15"]
     binding: "Alt+Shift+N"
+  # G) Gaming Workspace (Steam)
+  - commands: ["move to workspace 17", "focus workspace 17"]
+    binding: "Alt+Shift+G"
