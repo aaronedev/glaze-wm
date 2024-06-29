@@ -221,10 +221,10 @@ window_rules:
     match_title: "/Soundcloud|Spotify|MusicBee|foobar2000/"
   # A) Android Mobile Phone Workspace (Samsung Flow)
   - command: "move to workspace 14"
-    match_process_name: "/samsungflow|SamsungFlowDesktop|runtimebroker/"
+    match_title: "Samsung Flow"
   # N) Laptop Workspace (mobaXterm, wsl, etc.)
   - command: "move to workspace 15"
-    match_process_name: "/mobaXterm/"
+    match_title: "MobaXterm"
   # none) Ableton Workspace (DAW)
   - command: "move to workspace 16"
     match_process_name: "/Ableton/"
