@@ -1,4 +1,4 @@
-# aaronedev | glazewm config | violet void theme
+# aaronedev | glaze-wm config | violet void theme
 
 ![screen-1](./screenshots/2024-05-22_glazewm-screen-1.png)
 ![screen-2](./screenshots/2024-05-22_glazewm-screen-2.png)

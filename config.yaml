@@ -150,18 +150,18 @@ workspaces:
   # 6) Server Workspace (mobaXterm, wsl, winscp, etc.)
   - name: "6"
     display_name: "⁶󰣀"
-  # 7) Unknown workspace
+  # 7) Docker Workspace (Docker Desktop)
   - name: "7"
     display_name: "⁷"
-  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 8) Python Workspace (PyCharm, Jupyter Notebook)
   - name: "8"
-    display_name: "⁸"
-  # 9) Unknown workspace
+    display_name: "⁸"
+  # 9) Art and Design Workspace (GIMP, Krita, Inkscape)
   - name: "9"
-    display_name: "⁹󱑠"
-  # 0) blank
+    display_name: "⁹"
+  # 0) Settings and Updates Workspace (Windows Settings, Windows Update)
   - name: "0"
-    display_name: ""
+    display_name: "⁰󱑠"
   # T) Email (Thunderbird)
   - name: "10"
     display_name: "❘ ᵗ"
@@ -197,13 +197,20 @@ window_rules:
   - command: "move to workspace 4"
     match_process_name: "/Visual Studio Code|Code/"
   # 5) Terminal Workspace (Windows Terminal)
-  # 6) Server Workspace (mobaXterm, wsl, etc.)
-  # 7) Unknown Workspace
-  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 6) Server Workspace (mobaXterm, wsl, winscp, etc.)
+  - command: "move to workspace 6"
+    match_process_name: "WinSCP"
+  # 7) Docker Workspace (Docker Desktop)
+  - command: "move to workspace 7"
+    match_title: "Docker Desktop"
+  # 8) Python Workspace (PyCharm, Jupyter Notebook)
   - command: "move to workspace 8"
+    match_title: "/PyCharm|Jupyter Notebook/Anaconda Navigator/"
+  # 9) Art and Design Workspace (GIMP, Krita, Inkscape)
+  - command: "move to workspace 9"
     match_process_name: "/GIMP|Krita|Inkscape/"
   # 9) Unknown Workspace
-  # 0) Gaming Workspace (Steam)
+  # G) Gaming Workspace (Steam)
   - command: "move to workspace 17"
     match_process_name: "/steamwebhelper|ui32/"
   # T) Email (Thunderbird)
@@ -353,7 +360,10 @@ keybindings:
   # 9) Unknown workspace
   - command: "focus workspace 9"
     binding: "Alt+9"
-  # 0) Gaming Workspace (Steam)
+  # 0) Settings and Updates Workspace (Windows Settings, Windows Update)
+  - command: "focus workspace 0"
+    binding: "Alt+0"
+  # G) Gaming Workspace (Steam)
   - command: "focus workspace 17"
     binding: "Alt+G"
   # T) Email (Thunderbird)
@@ -402,7 +412,10 @@ keybindings:
   # 9) Unknown workspace
   - commands: ["move to workspace 9", "focus workspace 9"]
     binding: "Alt+Shift+9"
-  # 0) Gaming Workspace (Steam)
+  # 0) Settings and Updates Workspace (Windows Settings, Windows Update)
+  - commands: ["move to workspace 0", "focus workspace 0"]
+    binding: "Alt+Shift+0"
+  # G) Gaming Workspace (Steam)
   - commands: ["move to workspace 17", "focus workspace 17"]
     binding: "Alt+Shift+G"
   # T) Email (Thunderbird)
