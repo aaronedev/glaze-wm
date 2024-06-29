@@ -208,8 +208,7 @@ window_rules:
     match_title: "/PyCharm|Jupyter Notebook/Anaconda Navigator/"
   # 9) Art and Design Workspace (GIMP, Krita, Inkscape)
   - command: "move to workspace 9"
-    match_process_name: "/GIMP|Krita|Inkscape/"
-  # 9) Unknown Workspace
+    match_title: "/GNU Image Manipulation Program|Krita|Inkscape|Inkview/"
   # G) Gaming Workspace (Steam)
   - command: "move to workspace 17"
     match_process_name: "/steamwebhelper|ui32/"
@@ -253,17 +252,10 @@ window_rules:
     match_process_name: "/steam|steamwebhelper/"
   - command: "resize borders 0px 0px 0px 3px"
     match_process_name: "/thorium/"
-  - command: "set width 25%"
-    match_process_name: "thorium"
-    match_title: "/ChatGPT/"
-  - command: "set width 605px"
-    match_process_name: "superProductivity"
-    match_title: "/Super Productivity/"
-  - command: "set width 20%"
-    match_process_name: "SamsungFlow"
-    match_title: "/Samsung Flow|SamsungFlowDesktop/"
   - command: "ignore"
     match_process_name: "mmc"
+  - command: "set tiling"
+    match_process_name: "Discord|Telegram|Signal"
 
 binding_modes:
   - name: "resize"
@@ -351,13 +343,13 @@ keybindings:
   # 6) Server Workspace (mobaXterm, wsl, etc.)
   - command: "focus workspace 6"
     binding: "Alt+6"
-  # 7) Unknown workspace
+  # 7) Docker Workspace (Docker Desktop)
   - command: "focus workspace 7"
     binding: "Alt+7"
-  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 8) Python Workspace (PyCharm, Jupyter Notebook)
   - command: "focus workspace 8"
     binding: "Alt+8"
-  # 9) Unknown workspace
+  # 9) Art and Design Workspace (GIMP, Krita, Inkscape)
   - command: "focus workspace 9"
     binding: "Alt+9"
   # 0) Settings and Updates Workspace (Windows Settings, Windows Update)
@@ -403,13 +395,13 @@ keybindings:
   # 6) Server Workspace (mobaXterm, wsl, etc.)
   - commands: ["move to workspace 6", "focus workspace 6"]
     binding: "Alt+Shift+6"
-  # 7) Unknown workspace
+  # 7) Docker Workspace (Docker Desktop)
   - commands: ["move to workspace 7", "focus workspace 7"]
     binding: "Alt+Shift+7"
-  # 8) Art and Design Workspace (GIMP, Krita, Inkscape)
+  # 8) Python Workspace (PyCharm, Jupyter Notebook)
   - commands: ["move to workspace 8", "focus workspace 8"]
     binding: "Alt+Shift+8"
-  # 9) Unknown workspace
+  # 9) Art and Design Workspace (GIMP, Krita, Inkscape)
   - commands: ["move to workspace 9", "focus workspace 9"]
     binding: "Alt+Shift+9"
   # 0) Settings and Updates Workspace (Windows Settings, Windows Update)
