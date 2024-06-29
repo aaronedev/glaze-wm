@@ -220,7 +220,7 @@ window_rules:
     match_process_name: "/superProductivity/"
   # C) Communication (Telegram, Signal, Discord)
   - command: "move to workspace 12"
-    match_process_name: "/Telegram|64gram|Signal|Discord/"
+    match_process_name: "/Telegram|64gram|Signal|Discord|Threema/"
   # M) Music (Spotify, MusicBee, foobar2000)
   - command: "move to workspace 13"
     match_process_name: "/Spotify|MusicBee|foobar2000/"
