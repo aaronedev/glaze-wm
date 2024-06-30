@@ -65,13 +65,13 @@ bar:
       font_size: "20px"
       border_color: "#5a42c9"
     - type: "network"
-      label_no_internet: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
-      label_ethernet: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
-      label_wifi: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
-      label_vpn: "<attr>⦙ </attr> <attr fs='22' fg='#50976e'>\U000F0A60</attr>"
-      label_ethernet_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
-      label_wifi_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
-      label_vpn_disconnected: "<attr fs='22' fg='#9f1212'>\U000F0C9B</attr>"
+      label_no_internet: "<attr fg='#9f1212'>󰈂 NC ❌</attr>"
+      label_ethernet: "<attr fg='#50976e'>󰈀 Eth ✅</attr>"
+      label_wifi_strength_0: "<attr fg='#9f1212'>\U000F057A WiFi: 0%</attr>"
+      label_wifi_strength_25: "<attr fg='#e67e22'>\U000F057B WiFi: 25%</attr>"
+      label_wifi_strength_50: "<attr fg='#f1c40f'>\U000F057C WiFi: 50%</attr>"
+      label_wifi_strength_75: "<attr fg='#2ecc71'>\U000F057D WiFi: 75%</attr>"
+      label_wifi_strength_100: "<attr fg='#50976e'>\U000F057E WiFi: 100%</attr>"
       margin: "0 4px 0 4px"
       padding: "4px"
       border_radius: "2px"
@@ -185,7 +185,7 @@ workspaces:
     display_name: "ᶰ⏽"
   # none) Ableton Workspace (DAW)
   - name: "16"
-    display_name: "ᵃ\U000F08F1 ❘"
+    display_name: "ᵃ\U000F08F1⏽"
 
 window_rules:
   # 1) Main Workspace (Firefox)
@@ -255,6 +255,8 @@ window_rules:
     match_process_name: "/steam|steamwebhelper/"
   - command: "resize borders 0px 0px 0px 3px"
     match_process_name: "/thorium/"
+  - command: "resize borders 0px -3px -3px -3px"
+    match_title: "musicbee"
 
   - command: "set tiling"
     match_process_name: "Discord|Telegram|Signal"
